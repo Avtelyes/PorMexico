@@ -5,6 +5,8 @@ class Post < ApplicationRecord
   has_one :location
   has_and_belongs_to_many :requirements
 
+  accepts_nested_attributes_for :location
+
   before_save :default_values
   def default_values
     self.status ||= 'active' # note self.status = 'P' if self.status.nil? might be safer (per @frontendbeauty)

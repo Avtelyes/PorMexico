@@ -13,7 +13,7 @@ jQuery ->
     markersArray.pop().setMap(null) while(markersArray.length)
     marker = new google.maps.Marker
       position: latLng
-      icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+      icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
       map: map
     map.panTo latLng
     markersArray.push marker
