@@ -10,9 +10,9 @@ class User < ActiveRecord::Base
       user.provider = auth.provider
       user.uid      = auth.uid
       user.name     = auth.info.name
-      user.email    = auth.email
+      user.email    = auth.info.email
       user.location = auth.location
-      user.fb_profile= auth.link
+      user.fb_profile= "www.facebook.com/" + auth.uid
       user.save
     end
   end

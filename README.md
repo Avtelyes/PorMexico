@@ -1,24 +1,29 @@
-# README
+# Por México
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### ¿Cómo puedo ayudar?
 
-Things you may want to cover:
+Actualmente nor urge de sobremanera un css responsivo. 
 
-* Ruby version
+Estamos en desarrollo en estas funcionalidades:
+- Integración de un mapa para la ubicación fácil de las zonas de apoyo
 
-* System dependencies
+- Creación de publicaciones de usuarios que inician sesión en Facebook
 
-* Configuration
+- Unión de otros usuarios a las llamadas de auxilio.
 
-* Database creation
+### Pasos para ayudar
 
-* Database initialization
+1.- Clona el proyecto y crea una branch.
 
-* How to run the test suite
+2.- Corre los comandos "rake db:migrate" y "rake db:seed"
 
-* Services (job queues, cache servers, search engines, etc.)
+3.- Corre el servidor y accede a traves de http://app.lvh.me:3000/
 
-* Deployment instructions
+4.- Contribuye con lo que quieras :) 
 
-* ...
+5.- Crea un Pull Request.
+
+
+## Descripción
+
+Es una plataforma, que busca canalizar organizadamente la ayuda y necesidades tras las catástrofes acontecidas en nuestro país.
