@@ -71,6 +71,22 @@ img{
 	width: 100%;
 }
 
+/*CSS PARA LA VISTA DE INSTITUTION*/
+#institutionTitle {
+  text-align: center;
+}
+
+.institution {
+  border: 3px;
+  display: inline-block;
+  width: 350px;
+  margin-left: 5%;
+}
+
+.institution h2 {
+
+}
+
 @media (max-width: 360px){
 	.help-type{
 		width:75% !important;
