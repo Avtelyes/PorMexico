@@ -31,7 +31,7 @@
           <% end -%>
         </td>
         <td> <% if post.user.id == current_user&.id %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: '¿Estas seguro de que deseas borrar esta publicación?' } %>
+              <%= link_to "Borrar", controller: "posts", action: "hide", id: post, :method => :post %>
           <% elsif post.category == "0" %>
               Ayudar
           <% elsif post.category == "1" %>

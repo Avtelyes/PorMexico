@@ -4,7 +4,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.sort {|a,b| a.helping_users.count <=> b.helping_users.count}
+    @posts = Post.where('status != ?', 'hidden').sort {|a,b| a.helping_users.count <=> b.helping_users.count}
+  end
+
+  def hide
+    @post.update(status: "hidden")
+    format.html { redirect_to "/posts", notice: 'Post removido.' }
   end
 
   # GET /posts/1
@@ -67,9 +72,9 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post.destroy
+    @post.update(status: "hidden")
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to posts_url, notice: 'Post ha sido borrado.' }
       format.json { head :no_content }
     end
   end
