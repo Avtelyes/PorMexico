@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   resources :posts
   post 'posts/:id/hide' => 'posts#hide', as: :delete_post
+  post 'posts/help' => 'posts#help', as: :help_post
+  post 'posts/submit' => 'posts#submit', as: :request_post
 
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
