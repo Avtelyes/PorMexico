@@ -26,18 +26,20 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    instance = {}
+    @post = Post.new
+    @post.location = Location.new
+    @post.category = params[:category].to_i
+    #instance = {}
     # if [0,1].include?(params[:category].to_i)
-      instance['category'] = params[:category]
+     # instance['category'] = params[:category]
     # end
     #puts "AQUI ESTA LA CATEGORIA: "
     #puts instance['category']
-    puts [0,1].include?(params[:category].to_i)
-    instance['post'] = Post.new
-    instance['post'].location = Location.new
-    instance['requirements'] = Requirement.all
-    instance['location'] = Geocoder.address(request.remote_ip)
-    @instance = instance
+    #puts [0,1].include?(params[:category].to_i)
+    #instance['post'] = Post.new
+    #instance['post'].location = Location.new
+    @requirements = Requirement.all
+    #@instance = instance
   end
 
   # GET /posts/1/edit

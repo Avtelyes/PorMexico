@@ -11,7 +11,45 @@
     </div>
   <% end %>
 
+    <h3 class="red">
+      <% if @post.category=="0" %>
+          ¿Que necesitas?
+      <% else %>
+          ¿Con que puedo ayudar?
+      <% end %>
+    </h3>
+    <div class="help-type">
+      <% if @requirements -%>
+          <% @requirements.each do |requirement| -%>
+
+              <%= fields_for 'requirement[]' , requirement do |requirement_fields| -%>
+
+                  <%= requirement.name %>
+                  <%= requirement_fields.check_box :id %>
+              <% end -%>
+          <% end -%>
+      <% end -%>
+      <br />
+    </div>
+    <br/>
+    <h3 class="red">Descripción:</h3>
+    <%= f.text_area :content, rows:5, cols:80 %><br />
+    <h3 class="red">Ubicación :</h3>
+    <div id="mapPost" style="height:250px;width:100%;margin:0 auto;"></div>
+    <%= f.fields_for :location do |fact| %>
+        <%= fact.hidden_field :address %>
+        <%= fact.text_field :latitude %>
+        <%= fact.hidden_field :longitude %>
+    <% end %>
+    <h3 class="red">Teléfono de Contacto:</h3>
+    <%= f.text_field :phone %><br />
+    <%= f.hidden_field :category, value: @post.category %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+
+    <div class="logo">
+      <%= image_tag('XMX.png') %>
+    </div>
 <% end %>
