@@ -1,15 +1,16 @@
-<h1>
-  <% if @instance['category'] == '0' %>
-      NECESITO AYUDA
-  <% elsif @instance['category'] == '1' %>
-      OFREZCO AYUDA
-  <% end %>
-</h1>
+
 
 <%= form_for @instance['post'], url: {controller: :posts, action: :create} do |f| %>
 
-    <h4> Categorías</h4>
-    <% if @instance['requirements'] -%>
+    <h3 class="red">
+      <% if @instance['category']=="0" %>
+          ¿Que necesitas?
+          <% else %>
+          ¿Con que puedo ayudar?
+       <% end %>
+    </h3>
+    <div class="help-type">
+      <% if @instance['requirements'] -%>
       <% @instance['requirements'].each do |requirement| -%>
 
           <%= fields_for 'requirement[]' , requirement do |requirement_fields| -%>
@@ -25,9 +26,23 @@
     <div id="mapPost" style="height:580px;width:100%;margin:0 auto;"></div>
     Teléfono de Contacto : <%= f.text_field :phone %><br />
     Descripción   : <%= f.text_area :content %><br />
+    </div>
+    <br/>
+    <h3 class="red">Descripción:</h3>
+    <%= f.text_area :content, rows:5, cols:80 %><br />
+    <h3 class="red">Ubicación :</h3>
+    <%= f.text_area :location ,rows:5, cols:80, value: @instance['location'] %><br />
+    <h3 class="red">Teléfono de Contacto:</h3>
+    <%= f.text_field :phone %><br />
     <%= f.hidden_field :category, value: @instance['category'] %>
 
-    <%= f.submit "Create" %>
-<% end %>
+    <div class="buttons">
+      <%= button_tag  'Cancelar', type:'button', onclick: "location.href = '/posts'", class:"button cancelar" %>
 
-<%= link_to 'Back', posts_path %>
+      <%= f.submit 'Guardar', class:"button aceptar" %>
+    </div>
+<% end %>
+<div class="logo">
+  <%= image_tag('XMX.png') %>
+</div>
+

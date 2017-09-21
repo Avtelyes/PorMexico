@@ -17,5 +17,6 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
+  get 'institutions' => 'institutions#index'
 
 end

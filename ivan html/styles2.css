@@ -61,14 +61,6 @@ form h3{
 	background-color: green;
 }
 
-.buttons .button{
-  padding: 10px;
-  margin: 10px;
-  color:white;
-  border: none;
-  font-size: 1.1em;
-}
-
 .logo{
 	margin: 24px auto;
 	width: 30%;
@@ -77,22 +69,6 @@ form h3{
 
 img{
 	width: 100%;
-}
-
-/*CSS PARA LA VISTA DE INSTITUTION*/
-#institutionTitle {
-  text-align: center;
-}
-
-.institution {
-  border: 3px;
-  display: inline-block;
-  width: 350px;
-  margin-left: 5%;
-}
-
-.institution h2 {
-
 }
 
 @media (max-width: 360px){

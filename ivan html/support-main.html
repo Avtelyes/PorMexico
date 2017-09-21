@@ -1,0 +1,25 @@
+
+<li><%= link_to 'Quiero Ayudar', new_post_path(:category => 1) %></li>
+<li><%= link_to 'Necesito Ayuda', new_post_path(:category => 0) %></li>
+<li><a href="#">Aviso Importante</a></li>
+
+
+<button class="dropdown-toggle" type="button" data-toggle="dropdown" style="border: none; background: none;">
+    <% if current_user %>
+    <img class="img-circle" src="<%= current_user.picture %>?type=small" alt="dropdown image">
+    <% else %>
+    <img class="img-circle" src="https://s3.amazonaws.com/FringeBucket/default-user.png" alt="dropdown image" style="height: 50px; width: 50px;">
+    <% end %>
+    <span class="caret"></span>
+</button>
+
+<ul class="dropdown-menu">
+    <% if current_user %>
+    <li>Bienvenido ¡<strong><%= current_user.name %></strong>!</li>
+    <li role="separator" class="divider"></li>
+    <li><%= link_to "Cerrar Sesión", signout_path, id: "sign_out" %></li>
+    <% else %>
+    <li><%= link_to "Inicia Sesión con Facebook", "/auth/facebook", id: "sign_in" %></li>
+    <% end %>
+</ul>
+</li>

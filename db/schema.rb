@@ -17,6 +17,16 @@ ActiveRecord::Schema.define(version: 20170921092959) do
     t.integer "user_id", null: false
   end
 
+  create_table "institutions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "help_type"
+    t.string   "location"
+    t.string   "url"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "address"
     t.float    "latitude",                              limit: 24
