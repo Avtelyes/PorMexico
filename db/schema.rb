@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921211647) do
+ActiveRecord::Schema.define(version: 20170921225837) do
 
   create_table "helping_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "post_id", null: false
@@ -32,10 +32,8 @@ ActiveRecord::Schema.define(version: 20170921211647) do
     t.float    "latitude",   limit: 24
     t.float    "longitude",  limit: 24
     t.string   "state"
-    t.integer  "post_id"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
-    t.index ["post_id"], name: "index_locations_on_post_id", using: :btree
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -46,8 +44,10 @@ ActiveRecord::Schema.define(version: 20170921211647) do
     t.string   "phone"
     t.string   "priority"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "location_id"
+    t.index ["location_id"], name: "index_posts_on_location_id", using: :btree
     t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
@@ -76,6 +76,6 @@ ActiveRecord::Schema.define(version: 20170921211647) do
     t.string   "picture"
   end
 
-  add_foreign_key "locations", "posts"
+  add_foreign_key "posts", "locations"
   add_foreign_key "posts", "users"
 end
