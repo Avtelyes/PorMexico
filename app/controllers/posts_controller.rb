@@ -49,7 +49,6 @@ class PostsController < ApplicationController
   def create
     puts post_params
     @post = Post.new(post_params)
-    @post.location =
     params[:requirement].each do |key, req|
       if req["id"] =="1"
         item = Requirement.find(key)
@@ -62,7 +61,7 @@ class PostsController < ApplicationController
         # format.json { render :index, status: :created, location: @post }
         redirect_to posts_path
       else
-        render plain:"Fail"
+        render text: @post.errors.messages.to_s
       end
   end
 

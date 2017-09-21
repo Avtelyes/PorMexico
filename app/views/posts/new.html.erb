@@ -27,7 +27,7 @@
     <%= f.text_area :content, rows:5, cols:80 %><br />
     <h3 class="red">Ubicación :</h3>
     <div id="mapPost" style="height:250px;width:100%;margin:0 auto;"></div>
-    <%= f.fields_for :location do |fact| %>
+    <%= f.fields_for @instance['post'].location do |fact| %>
         <%= fact.hidden_field :address %>
         <%= fact.text_field :latitude %>
         <%= fact.hidden_field :longitude %>
