@@ -48,6 +48,7 @@ class PostsController < ApplicationController
   def create
     puts post_params
     @post = Post.new(post_params)
+    @post.location = Location.new
     params[:requirement].each do |key, req|
       if req["id"] =="1"
         item = Requirement.find(key)

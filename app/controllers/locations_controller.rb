@@ -9,6 +9,7 @@ class LocationsController < ApplicationController
 
   def maps
     @locations = Location.all
+    puts @locations
   end
 
   # GET /locations/1
