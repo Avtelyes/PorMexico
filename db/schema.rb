@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921092959) do
+ActiveRecord::Schema.define(version: 20170921211647) do
 
-  create_table "helping_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "helping_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "post_id", null: false
     t.integer "user_id", null: false
   end
 
-  create_table "institutions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "institutions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
     t.string   "description"
     t.string   "help_type"
@@ -27,18 +27,18 @@ ActiveRecord::Schema.define(version: 20170921092959) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "address"
-    t.float    "latitude",                              limit: 24
-    t.float    "longitude",                             limit: 24
+    t.float    "latitude",   limit: 24
+    t.float    "longitude",  limit: 24
     t.string   "state"
-    t.datetime "created_at",                                       null: false
-    t.datetime "updated_at",                                       null: false
-    t.integer  "{:index=>true, :foreign_key=>true}_id"
-    t.index ["{:index=>true, :foreign_key=>true}_id"], name: "index_locations_on_{:index=>true, :foreign_key=>true}_id", using: :btree
+    t.integer  "post_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.index ["post_id"], name: "index_locations_on_post_id", using: :btree
   end
 
-  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "content"
     t.string   "location"
     t.string   "category"
@@ -51,18 +51,18 @@ ActiveRecord::Schema.define(version: 20170921092959) do
     t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
-  create_table "posts_requirements", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "posts_requirements", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "post_id",        null: false
     t.integer "requirement_id", null: false
   end
 
-  create_table "requirements", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "requirements", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
@@ -76,5 +76,6 @@ ActiveRecord::Schema.define(version: 20170921092959) do
     t.string   "picture"
   end
 
+  add_foreign_key "locations", "posts"
   add_foreign_key "posts", "users"
 end
