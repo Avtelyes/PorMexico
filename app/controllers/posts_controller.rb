@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
+
+  before_action :log_in, :except => :index
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+
 
   # GET /posts
   # GET /posts.json
@@ -91,4 +95,10 @@ class PostsController < ApplicationController
       par['user_id'] = current_user.id
       par
     end
+
+  def log_in
+    unless current_user
+      redirect_to "/auth/facebook"
+    end
+  end
 end
