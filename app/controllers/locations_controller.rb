@@ -8,8 +8,10 @@ class LocationsController < ApplicationController
   end
 
   def maps
-    @locations = Location.all
-    puts @locations
+    #@locations = ActiveRecord::Base.connection.execute("foo")
+    @NeedLocations = ActiveRecord::Base.connection.exec_query("SELECT * from locations;")
+    puts @NeedLocations
+    #@Offerocations = ActiveRecord::Base.connection.execute("foo")
   end
 
   # GET /locations/1

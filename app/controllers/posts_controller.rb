@@ -34,6 +34,7 @@ class PostsController < ApplicationController
     #puts instance['category']
     puts [0,1].include?(params[:category].to_i)
     instance['post'] = Post.new
+    instance['post'].location = Location.new
     instance['requirements'] = Requirement.all
     instance['location'] = Geocoder.address(request.remote_ip)
     @instance = instance
@@ -48,7 +49,7 @@ class PostsController < ApplicationController
   def create
     puts post_params
     @post = Post.new(post_params)
-    @post.location = Location.new
+    @post.location =
     params[:requirement].each do |key, req|
       if req["id"] =="1"
         item = Requirement.find(key)
@@ -104,7 +105,7 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      par = params.require(:post).permit(:content, :phone, :category)
+      par = params.require(:post).permit(:content, :phone, :category, :location_id, location_attributes: [:id, :address, :latitude, :longitude, :state])
       par['user_id'] = current_user.id
       par
     end
