@@ -34,4 +34,14 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+    <fieldset class="form-group">
+      <%= f.label :address, 'Address' %>
+      <%= f.text_field :address, class: "form-control" %>
+      <small class="text-muted">You can also enter IP. Your IP is <%= request.ip %></small>
+    </fieldset>
+    <div class="card" style="height:100%;width:100px;margin:0 auto;">
+      <div class="card-block" style="height:100%;width:100px;margin:0 auto;">
+      </div>
+    </div>
 <% end %>
+<div id="map" style="height:300px;width:100vw;margin:0 auto;"></div>
