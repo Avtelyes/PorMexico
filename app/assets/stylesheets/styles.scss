@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'futura'; 
+    src: url('/futura light bt.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "futura";
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+.nav-bar {
+	text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    overflow: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+	border: none !important;
+}
+
+.nav-bar li {
+	width: 4%;
+	min-width: 50px;
+    float: left;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.nav-button{
+	width: 23% !important;
+	min-width: 150px !important;
+}
+
+.hour{
+	color:gray;
+}
+
+.nav-bar li a {
+	padding: 15px 15px;
+	border-radius: 10px;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav-image{
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.opacidad{
+	opacity: 0.5;
+}
+
+i{
+	color: gray;
+}
+
+.nav-bar li .red-button{
+	background-color: red;
+	color: white;
+
+}
+
+.nav-bar li .green-button{
+	background-color: green;
+	color: white;
+}
+
+.post-container{
+	overflow: auto;
+	width: 75%;
+	margin: 50px auto;
+	border-bottom: 1px solid gray;
+}
+
+.image-container{
+	width: 8%;
+	border-radius: 50%;
+	float: left;
+}
+
+img{
+	width:100%;
+}
+
+.image-container img{
+	border-radius: 50%;
+}
+
+.post{
+	padding: 12px;
+	margin:12px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	float: left;
+	width: 75%;
+	min-width: 280px;
+	background-color: rgba(200,200,200,0.2);
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.post-info{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.post h3{
+	margin: 8px;
+}
+
+.post p{
+	text-align: justify;
+	margin-top: 10px;
+	padding: 8px;
+}
+
+.post > span{
+	float:right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.my-button{
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 6% 30px 0 30px;
+	float: left;
+	border: none;
+	color:white;
+	width: 10%;
+	border: 1px solid gray;
+}
+
+.b-red{
+	background-color: red;
+}
+
+.b-green{
+	background-color: green;
+}
+
+.red{
+	color: red;
+	font-weight: bold;
+}
+
+.green{
+	color: green;
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+@media (max-width: 360px){
+	li a{
+		font-size: 0.8em !important;
+		padding: 10px 10px;
+	}
+
+	.post p{
+		font-size: 0.9em;
+	}
+
+	.image-container{
+		width: 10%;
+	}
+}
+
+@media (max-width: 768px){
+	li a{
+		font-size: 0.9em;
+	}
+
+	.post-container{
+		width: 90%;
+	}
+
+	.post{
+		width:100%;
+		margin: 0;
+	}
+
+	.post p{
+		text-align: left;
+	}
+
+	.my-button{
+		margin: 10px auto;
+		width: 100%;
+	}
+
+	.my-button-container{
+		clear: both;
+		width: 30%;
+		margin: 10px auto;
+	}
+}
