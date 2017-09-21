@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
 
+  get "/location" => "main#location"
+
 end
