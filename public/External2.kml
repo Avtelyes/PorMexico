@@ -1,0 +1,2451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Derrumbes, albergues, hospitales y voluntariado sismo CDMX</name>
+    <description><![CDATA[Última actualización 9:53am del 21 de septiembre.<br>Favor de revisar con detenimiento los horarios y la descripción de cada punto del lado izquierdo. <br>Para colaborar, escribe a @JannTM en Twitter o a juantolentino.morales@gmail.com]]></description>
+    <Style id="icon-1507-097138-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1507-097138-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1507-097138">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1507-097138-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1507-097138-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1507-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1507-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1507-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1507-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1507-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1507-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1507-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1507-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1507-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1507-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1541-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1541-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1541-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1541-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1541-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1556-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1556-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1556-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1556-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1556-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1632-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1632-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1632-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1632-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1632-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1639-9C27B0-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1639-9C27B0-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1639-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1639-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1639-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1639-9C27B0-nodesc-normal">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1639-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1639-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1639-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1639-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1680-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1680-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1680-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1680-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1680-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1680-FF5252-nodesc-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1680-FF5252-nodesc-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1680-FF5252-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1680-FF5252-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1680-FF5252-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1808-097138-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1808-097138-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1808-097138">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1808-097138-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1808-097138-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1808-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1808-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1808-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1808-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1808-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1898-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1898-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1898-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1898-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1898-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-nodesc-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-A52714-nodesc-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>¿Qué se necesita y dónde?</name>
+      <Placemark>
+        <name>(12:31pm) Centro de acopio en Grupo Loma</name>
+        <description><![CDATA[12:31pm - 21 de sept.: "Tenemos mucha agua, medicamentos, picos y palas, y productos higiénicos", reporta Jose Luis Guerrero‏ @joseluisgcortes en Twitter. ]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2529586,19.3663042,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:26pm) Centro de acopio para Morelos y Puebla en Av. Hacienda de Guaracha 121</name>
+        <description><![CDATA["Estamos canalizando hoy a #Puebla y #Morelos", reporta Millie Skye Novaček‏ @MillieNovacek en Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2250935,19.489023,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:24pm) Centro de acopio en Colegio Alemán en México 5501</name>
+        <description><![CDATA["Estamos en el @colegio_aleman como #CentroDeAcopio", reporta Esteban Setzer‏ @SetzerEsteban en Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0839091,19.2424935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:00pm) Relevo de voluntarios en Parque España</name>
+        <description><![CDATA[- 12:00pm - 21 de sept.: "Aún se necesitan voluntarios. Se pide que lleven botas y pantalón de mezclilla".<br>- 11:05am - 21 de sept.: "Aún se necesitan relevos para sacar escombros", reporta gente del sitio www.sismomex.com.<br>- 9:36am - 21 de sept.: "Aún se necesita gente para sacar escombros", reporta gente del sitio www.sismomex.com.<br>- 9:01am - 21 de sept.: "Se necesita relevo de voluntarios para sacar escombros", reporta coordinadora de voluntarios vía correo electrónico.<br>- 5:17PM. "Ya no necesitamos medicamentos ni cobijas. Necesitamos comida y linternas", reportó la revista WRAP.<br>- Se necesitan:<br>Lentes y guantes de seguridad, cuerdas, oxígeno, equipo de sutura, soluciones intravenosas, rivotril, tafil, mazos, ceguetas, insulina, mascarillas, reporta BuzzFeed.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1711504,19.4153363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:53am) Alimentos no perecederos en calle Mónaco & Bretaña]]></name>
+        <description><![CDATA[- 11:53am de 21 de sept.: "Se buscan dos mujeres. No traer alimentos perecederos, reporta Foro TV".<br>- "En monaco y bretaña ya no se necesita mas gente, pero en xochimilco se sigue necesitando equipo y víveres", reporta David Isunza‏ @Astrhate en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1383398,19.3732563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:31am) Víveres para Morelos y Puebla Sinaloa 216</name>
+        <description><![CDATA[11:31pm de 21 de sept.: "Hay dos camionetas con espacio en Sinaloa 216, Roma Norte que salen a Morelos entre 12 y 13 h. Contacto Rocío Aguilar 5540717257", reporta Daniela G. Canul‏ @Dana_Canul en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1735255,19.4192471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:30am) Motonetas en Av. Veracruz 62</name>
+        <description><![CDATA[- 11:30am - 21 sept.: "Necesitamos motonetas y motos cilindraje 150 y 200 sin escape abierto", reporta Irma Gallo‏ @irmagallo en Twitter.<br>- Actualización 11:32pm: piden camión para sacar polines.]]></description>
+        <styleUrl>#icon-1632-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1744439,19.4175474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:22am) Centro de acopio para Puebla y Morelos en Cda. Rufina 40</name>
+        <description><![CDATA[11:20am - 21 de sept.: De 8am a 6pm. "Se esta armando un centro de acopio en la escuela Se necesita equipo de curación vendas gasas, herramientas, despensas. Se enviará a Puebla y Morelos".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1883569,19.4020927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:20am) Personal médico y medicamentos en Av. Division del Nte. & Eugenia]]></name>
+        <description><![CDATA[- 11:20am - 21 de sept.: "En División del Norte y Eugenia se solicita material de curación y personal médico", reporta Aldo HS‏  @Aldonautico en Twitter.<br>- 8:47am de 21 de sept.: "Se aceptan desayunos", reporta coordinadora de voluntarios vía correo electrónico.<br>- "Ya no vengan por favor a eje 5 y division, no cabe la gente en la calle y no pueden pasar camiones y maquinaria", dice en Twitter Toni François‏ @ToniFrancois]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1611229,19.3860246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:19am) Víveres para casa hogar en Av Renato Leduc 82</name>
+        <description><![CDATA["Se solicitan víveres para casa hogar. Renato Leduc 82, Toriello Guerra, Tlalpan. Tel 56062376.", reporta Aldo HS‏  @Aldonautico en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1635652,19.2940549,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:10am) Señora atrapada en Enrique Rebsamen 241</name>
+        <description><![CDATA[Video de 9:00am de 21 de sept.: " El siguiente video: https://twitter.com/bbbehar/status/910896250408517632 pide ayuda para señora atrapada. Favor de enviar información para actualización"]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1588969,19.398975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:04am) Voluntarios y atención psicológica en Parque México </name>
+        <description><![CDATA[- 11:04am - 21 de sept. :"Aún faltan voluntarios", reporta coordinadora de www.sismomex.com.<br>- 9:30am - 21 de sept.: Además de gente, se necesitan sillas de ruedas, cascos, chalecos, cintas de precaución, lentes de seguridad, googles transparentes.<br>- 9:00am - 21 de sept.: Reportan usuarios de Twitter y vía correo electrónico que se requieren voluntarios y apoyo psicológico en centro de acopio de Parque México.<br>- Se necesitan brigadistas, reporta el periódico Excélsior en su Twitter.<br>- En centro de acopio solicitan vacunas antirrábicas, reportan varios usuarios de Twitter.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1695929,19.4119996,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:02am) Productos de higiene personal en Eje 3 Pte & Av Chapultepec]]></name>
+        <description><![CDATA[- 11:02am - 21 de sept.: "en centro de acopio que manda cosas a Morelos, necesitan leche en polvo, cepillos de dientes y pasta , toallas femeninas, insulina, intravenosos, antibióticos, analgésicos, cosas para bebe , epinefrina", reporta coordinadora de página www.sismomex.com.<br>- Solicitan insulina, compresas frías, hielo, bolsas, enlatados, aguas y comida para los rescatistas]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1702069,19.422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:00am) Voluntarios y comida en Cto. Interior Maestro José Vasconcelos 83</name>
+        <description>12:00pm - 21 sept.: Chef Ángel Romero y otros profesionales de la cocina estarán preparando alimentos. Solicitan insumos, víveres y gente que ayude a repartir. Contacto: 5536577207.</description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1790601,19.4176615,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:53am) Arnés y rappel en San Luis Potosí y Medellín</name>
+        <description><![CDATA[- 10:54am. Ambulancia llegó, dice Foro TV, se busca a la persona que lo solicitó.<br>- 10:53am: "Falta material de arnés y rappel", solicita reportera de Foro TV in situ.<br>- 10:10am - 12 de sept.: se necesitan esmeriles para corte de concreto, pide bombero in situ entrevistado en Foro TV.<br>- 8:45am 12 de sept.: Solicitan una ambulancia en esta ubicación, debido a que están por sacar a una persona y puede requerir atención médica.<br>- 2:00am del 21 sept.: se necesitará relevo de voluntarios. Verificado a las 11:51pm por Abril Alzaga‏ @abrilalzaga  en Twitter.<br>- 1:50am del 21 de sept.: ForoTV reporta una persona atrapada en el edificio.<br>- 9:46am: Se requieren voluntarios. Urge traer medicamento para el dolor y guantes de carnaza y cizallas.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1650546,19.4130014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:51am) Interprétes de japonés en Primaria Enrique Rebsamen</name>
+        <description><![CDATA[- 10:51am - 21 de sept.: "Faltan intérpretes de japonés en la escuela Rebsamen en Coapa y en la fábrica textil de Chimalpopoca", reporta Pao‏ @Pao_Oaks en Twitter.<br>- 9:05am - 21 de sept.: "necesitan urgentemente varillas de media, 3/8, 3/4 y placas de metal de 40cm", reporta Ciro Gómez Leyva en su cuenta de Twitter.<br>- 2:01am: "Se requiere un pediatra para el colegio Rebsamen, el pediatra que está lleva 36 hrs ahí y requiere ya un relevo", reporta Eric Mendoza Urquin‏ @ISCERIC vía Twitter.<br>- 1:51am: "Hasta el momento la Marina puede confirmar que solo hay una niña atrapada en el Rébsamen", reporta POLÍTICO México.<br>- 1:10am: "Urgen sábanas térmicas", reporta voluntaria in situ.<br>- "Se requiere epinefrina, insulina, material quirúrgico pedriátrico", reporta mujer in situ por correo electrónico.<br>- 11.52pm: "Necesitan 10 barras IPR 4 pulgadas, una barra de punto de apoyo para apoyar la estructura, garruchas, cadenas, polipastos y arguero", reporta Joaquín López Dóriga en su cuenta de Twitter.<br>8:40pm: "Urgen impermeables en el colegio Rebsamen!", reporta Javier Piedra‏ @JavierPiedra_13 en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1304634,19.2981976,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(10:49 am - 21 sept.) Relevo de voluntarios en Eje 5 Sur & Nicolás San Juan]]></name>
+        <description><![CDATA[- 10:49am - 21 de sept.: "Se necesitan relevos, ahí tienen equipo para prestar", reporta David Isunza‏ @Astrhate en Twitter.<br>- 9:36am de 21 de sept. "Listos los relevos, ahora ir a apoyar a otros lugares", reporta www.sismomex.com.<br>- 8:38am: Se solicita entre 100 y 150 relevos para voluntarios, reportan varios usuarios en Twitter y por correo electrónico. No importa que no tengan equipo, se les proporciona en el lugar.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1626902,19.3863785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:39am) Centro de acopio en Tecnológico de Monterrey Campus Santa Fe</name>
+        <description><![CDATA["Necesitamos medicamentos, material primeros auxilios y de construcción", solicita Marite DH‏ @maritedh en Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2580184,19.3597735,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:30am) Medicamentos en Av. Guillermo Massieu Helguera 86A</name>
+        <description><![CDATA[Desde las 10:30 AM hasta las 12:00 PM del jueves 21 de septiembre, se estará requiriendo para enviar a Morelos: Guantes, gasas, hilos de sutura, médicos generales, médicos especialistas, antibióticos: Doxiciclina, levofloxacino, ciprofloxacino, Dicloxacilina, claritromicina, eritromicina, analgésicos. Pañales para adultos y bebé. <br>comida enlatada de fácil apertura", reportó Miguel De La Luz <digimiguel31@gmail.com>.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1374739,19.5104113,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:17am) Medicamentos, material de primeros auxilios y construcción en Av de los Poetas 100</name>
+        <description>necesitamos medicamentos, material primeros auxilios y de construcción en TEC CSF porfa!</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2573296,19.346103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:14am) Víveres para Morelos en Prepa CCM</name>
+        <description>Se necesitan víveres para enviar a Morelos. CAMIÓN SALE A LAS 12:PM, reporta usuario de Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1355502,19.2852361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:05am) Centro de acopio en Av. República de El Salvador 91</name>
+        <description><![CDATA["Farmacia París habilito uno de sus anexos como centro de acopio, el cual nos gustaría darle la mayor difusión posible, ya que nos encontramos en una zona estratégica y contamos con espacio y personal suficiente para poder recibir todo lo necesario".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1351746,19.4293676,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(9:50am) Relevos cada 6 horas en Eje 2 Pte & Eugenia]]></name>
+        <description><![CDATA[- 9:50am de 21 sept.: "Se necesitan relevos cada seis horas, cadena humana para transportar escombros, no se sabe si hay sobrevivientes, pantalón de mezclilla y botas, clave que tienen que dar para acceso 'Judith Sandoval Parque España', dirigirse con Nora o Alejandro. Nadie más puede dar instrucciones", reporta video in situ. Ya no se necesita comida, agua sí.<br>- "Se solicitan médicos para las 2 de la mañana", reporta usuaria vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1641705,19.3866975,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:36am) Faltan botas, cascos, cubrebocas y guantes en Av. Álvaro Obregón 282</name>
+        <description><![CDATA["Listos los relevos para sacar escombros en Alvaro Obregon, 282 donde empieza la avenida (donde está el edificio caído). FALTAN botas, casco, cubre bocas y guantes", reporta coordinadora de voluntarios del sitio www.sismomex.com.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1683574,19.4166845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:36am) Voluntarios en CAMARA NACIONAL DE LA INDUSTRIA DEL HIERRO Y DEL ACERO</name>
+        <description><![CDATA["Se necesitan manos para empacar comida, ropa, papel de baño, etcétera", reporta coordinadora de voluntarios del sitio www.sismomex.com.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1640738,19.3930808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:32am) Albergue para personas y mascotas en 5 de Febrero 171</name>
+        <description><![CDATA[9:32am - 21 de sept.: "Hay lugar para la gente y sus mascotas, alimentos, camas, y se pueden bañar. Lo implementó Jorge Delgado Hernández, con este mismo nombre lo localizan en Facebook".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1358343,19.421269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:21am) Centro de acopio Univerix en Av. Contreras 387</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2150137,19.3281851,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:02am) Cajas y manos en Parque De Los Venados</name>
+        <description><![CDATA[9:02am - 21 de sept.: "Centro de acopio Benito Juárez. Cajas y manos se necesitan", reporta WhatsApp 2shy‏ @2shy en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1582408,19.3707415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(8:54am) Voluntarios en Eugenia & Ferrol]]></name>
+        <description><![CDATA[8:54am - 21 de sept.: "Se requiere voluntarios con guantes, casco y condición física para remover escombros", reporta coordinadora de voluntarios vía correo electrónico.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1632708,19.3865032,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:51am) Lámparas y velas en Parroquia San Gregorio Magno</name>
+        <description>8:51am - 21 de sept.: Solicitan lámparas y velas, reportan usuarios vía Foro TV. Ya no se necesita agua ni medicamentos.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0564516,19.2534633,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(8:37am - 21 sept.) Voluntarios y cajas en Calle Bolivar & Chimalpopoca]]></name>
+        <description><![CDATA[- 8:37am - 21 de sept.: Urgen cajas de cartón, reporta usuaria de Twitter.<br>- 8:28am de sept.. Se reporta que se requieren de voluntarios en esta ubicación, aún puede haber personas con vida. Según varios usuarios de Twitter, lo único que se requiere son voluntarios.<br>- 12:00am: relevo de voluntarios. Horario aproximado. Ya hay mucha agua; a los voluntarios se les da casco y herramientas si no llevan, reporta BRAULIO‏ @braulitom en Twitter.<br>9:00pm: Relevos a las 21:00 horas en Bolívar y Fray Servando. Fabrica. Guantes, cascos, impermeables, cubetas. Suero.<br>8:30pm: "Ya no se requiere agua potable, herramientas, lo que más necesitan es medicamentos y material de curación", reporta BRAULIO‏ @braulitom en Twitter.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1400507,19.4222791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:06am - 21 sept.) Xochimilco</name>
+        <description><![CDATA[- Vía correo electrónico nos notificaron a las 3:20am que "ya no ocupan tanta agua, ocupan papel de baño, toallas femeninas, pañales, cubrebocas".<br>- (4:56pm) Varios usuarios en Twitter reportan exceso de gente en la zona. Rafael Sarmiento reporta dañado puente frente al Tec.<br>- En la explanada de la delegación se requiere de arquitectos e ingenieros para valoración de edificios. También herramientas como palas, picos, mazos, carretillas, cuerdas, tapabocas, plantas de luz, linternas, pilas, gasolina, reporta Actual MX.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0944038,19.253581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:00am) Voluntarios en José María Rico 418</name>
+        <description><![CDATA[- 8:00am - 21 de sept.: "Se necesitan voluntarios para DESCARGAR víveres", reporta Diana Gamboa vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1733934,19.3676359,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:00am - 21 sept.) Relevo de voluntarios en Zócalo</name>
+        <description><![CDATA[- "12:36am - 21 sept.: próximo relevo a las 8:00am", reporta Arturo Waldo‏ @arturo_waldo  en Twitter.<br>- Actualizado 9:19am. Se necesitan bolsas plástico<br>Cascos<br>Picos<br>Palas<br>Marros<br>Martillos<br>Arneses<br>Clavos de 2" y +<br>Diesel]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1332049,19.4326018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:00am - 21 sept.) Centro de acopio - Enlight Mexico | Energía Solar</name>
+        <description><![CDATA[De 8am a 7:00pm. "En Enlight junto con World Vision montamos un centro de acopio de herramientas, mismas que ya empezamos a canalizar a los lugares donde los requieren. Se necesita: palas, picos, cascos, guantes de carnaza, barras y carretillas", comparte Kike O.Tweets @kike_ortiz vía Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.17391,19.4357723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:00am - 21 sept.) Centro de acopio - Edron Academy</name>
+        <description><![CDATA["A partir de las 6am del 21 de septiembre se reciben víveres, medicamentos etcétera", reporta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.252173,19.335179,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:08am - 21 de sept.): Urgen colchonetas</name>
+        <description><![CDATA["Se requieren 10 colchonetas, pañales y leche en polvo en Luis Donaldo Colosio Sin número, colonia Buenavista, Deportivo Cuauhtémoc (en frente del edificio delegacional)", reporta usuaria vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.151445,19.4421209,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:06am - 21 de sept.) Calle Pedro Ramírez del Castillo 14</name>
+        <description><![CDATA["Urgen 10 colchonetas para albergue", reporta usuaria vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1052886,19.263635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(1:35am) Eje 3 Pte & Jose Alvarado]]></name>
+        <description><![CDATA[1:34am - 21 de sept. "Se necesitan garrafones de agua con tapa, de 20 litros, vacíos para mover diesel", reportan varios usuarios de Twitter in situ. Información verificada con fotografías.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.164706,19.4123666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(1:19am - 21 sept.) Calle Gabriel Mancera & Calle San Borja]]></name>
+        <description><![CDATA[- 1:19am de 21 sept.: "Requieren lámparas, baterías, cajas de cartón, extensiones, bolsas plásticas", reporta Oscar Peralta‏ @oscar1320 en Twitter con información verificada a la 1:00am.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1647371,19.3843867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(1:00am - 21 de sept.) Eje 7A Sur & Petén]]></name>
+        <description><![CDATA[- A la 1:00am relevo de voluntarios. "Se tiene que llegar con botas, cascos, guantes, aún hay gente atrapada con vida", reporta Ana Laura Lozano‏ @analauralh con información verificada a las 11:40pm.<br>9:00pm: Punto de reunión para voluntarios a partir de las 9:00pm. Notificar a Eduardo Echevarria nombre y cuántos voluntarios van al 5519493083.<br>- "Hace falta equipo, cascos, palos, cubetas y gente para remover escombro", reporta en Twitter David Isunza‏ @Astrhate.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1569124,19.3665005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(1:09am) Ciudad Universitaria</name>
+        <description><![CDATA[1:09am: "Necesitan voluntarios para hacer cadena humana y también las manos para empaquetar agua (Túnel 28)", reporta Maria Fernanda Mora‏ @marifermora90 en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1843676,19.3188895,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:30am - 21 de sept.) Sonora y Av. Álvaro Obregón</name>
+        <description><![CDATA[- "Se necesita relevo para apoyar en acopio. Dra. Ximena Ronquillo 43777637"<br>- 9:00pm: Punto de reunión para voluntarios a partir de las 9:00pm. Notificar a Eduardo Echevarria nombre y cuántos voluntarios van al 5519493083.]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1702312,19.4164418,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:24am - 21 sept.) Centro Universitario México</name>
+        <description><![CDATA[- 12:24am: "se solicitan vehículos y apoyo para mover víveres a centros de acopio", reporta Diario Récord en su cuenta de Twitter.<br>- 8:23pm "Se está haciendo botiquines pero necesitan más bolsas de 40x40 y más medicamentos, cubreboca, gasas, vendas y papel sanitario", reporta David Isunza‏ @Astrhate en Twitter.<br>- 7:58pm: reportan que el albergue está vacío, hay mucho lugar.<br>- "(Aquí) está el CUM donde les urge motociclistas para repartir víveres", reporta el HuffPost México en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1618052,19.3887282,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:19pm) Eje 8 Sur & Adolfo Prieto]]></name>
+        <description>Se necesitan voluntarios para descarga de trailers, informan varios usuarios en Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1737845,19.367706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:12pm) Av. Popocatépetl 295</name>
+        <description>Albergue que acepta personas con mascotas, reporta Sam Cifuentes‏ @SamCifuentesZ en Twitter.</description>
+        <styleUrl>#icon-1507-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1598259,19.3637106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:03pm) México 113 & Agustín Melgar]]></name>
+        <description><![CDATA["En san gregorio urge agua potable, si van a ir a dejar favor de apoyar ahí casi todos los demas centros tienen suficiente, reporta David Isunza‏ @Astrhate en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0610417,19.25585,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:46pm) Instituto Cultural STJ</name>
+        <description><![CDATA["Comida, WC, redes WIFI, agua, colchonetas, cobijas. Si sabes o conoces de alguien que lo necesita en la zona, compártelo", reporta la cuenta de Twitter del Instituto.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1455735,19.3425643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:22pm) Capulines 39</name>
+        <description><![CDATA["Apoyo en víveres, material y herramienta para reacondicionamiento, ropa; posible traslado a albergue. Gente de escasos recursos", reportan vía correo electrónico.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2467599,19.2914848,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:18pm) Calz. de Tlalpan 1263</name>
+        <description>Adultos mayores necesitan luz para sus tanques de oxígeno, reporta Carlos Velázquez‏ @crvelazquezg en Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1419254,19.3712454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:29pm) Camelias 41</name>
+        <description><![CDATA["Colecta para perros y gatos: croquetas para perro y gato, comida en lata, cajas transportadoras, cobijas, alcohol, gasas, collares de todos los tamaños, correas, camitas", reporta usuario vía correo electrónico.]]></description>
+        <styleUrl>#icon-1507-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.203715,19.5668361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:27pm) Jalapa 324</name>
+        <description><![CDATA["Faltan medicinas y alimentos no perecederos. Hay comida para quien necesite", reportan vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1594271,19.408983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:23pm) Jalapa 213</name>
+        <description><![CDATA[Centro de acopio. "Tenemos un centro de acopio en Jalapa 213, el lugar una organizacion vecinal que se creo a partir del sismo de 1985".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1600133,19.4132217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(9:00pm) Eje 1 Ote & Calz de las Brujas]]></name>
+        <description>Punto de reunión para voluntarios a partir de las 9:00pm. Notificar a Eduardo Echevarria nombre y cuántos voluntarios van al 5519493083.</description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1253294,19.2969352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:00pm) Nuevo León y Juan Escutia</name>
+        <description>Punto de reunión para voluntarios a partir de las 9:00pm. Notificar a Eduardo Echevarria nombre y  cuántos voluntarios van al 5519493083.</description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1717815,19.4132544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:32pm) José María Rico 1644</name>
+        <description><![CDATA["Necesitan voluntarios para descargar suministros de FONDEN. Son trailers con agua, colchonetas, kits de limpieza, etcétera.Enlace: Alejandro Vidal Protección Civil", reporta Alejandra Betanzo‏ @abetanzo en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1801789,19.3682454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:30pm) Calle Bajío 365</name>
+        <description><![CDATA["Hay cobijas y alimento", dice personal del albergue. ]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.170378,19.4024785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(8:12pm) Av. Insurgentes Sur & Av Sonora]]></name>
+        <description><![CDATA["Necesitan diesel en la calle de Sonora e Insurgentes para plantas de luz", reporta David Isunza‏ @Astrhate en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.166416,19.4126854,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:08pm) Ciudad Jardín</name>
+        <description><![CDATA[- A partir de las 8:00pm se están aceptando relevo de voluntarios.<br>- "En cd jardín todavía hay 10 personas atrapadas.Sólo dejan pasar si llevas pala, casco y cubreboca", dice en Twitter La fugitiva‏ @palomarrazola.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1449234,19.3348691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(8:06pm) Lago Tanganica 67</name>
+        <description><![CDATA[- 8:06pm: "Nos urgen cajas de cartón o rejillas para separar y distribuir lo que esta llegando", reporta Diego Luna @diegoluna_ en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1931682,19.4386168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:45pm) Jalapa 234</name>
+        <description>Centro de acopio. Sobra comida preparada (no mucha); faltan vacunas antitetanos y lámparas, dice personal.</description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1597147,19.4114735,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:41pm) Barranca del Muerto 139</name>
+        <description><![CDATA["En Crossbones Barbell Club habilitamos centro de acopio y albergue. También ofrecemos ayuda a las voluntarios. Tenemos baños, comida, espacio de descanso , wifi, etcétera", dice personal del lugar.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1817047,19.3630352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:32pm) José María Vertiz y Pilares</name>
+        <description><![CDATA["En el centro de acopio de Vertiz y Pilares solicitan impermeables", reporta La  fugitiva‏ @palomarrazola en Twitter]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1544437,19.3753346,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(7:29pm) Av de los Insurgentes Sur & Medellín]]></name>
+        <description><![CDATA[- 7:29pm: se reporta que quizá dinamiten el edificio. Nada confirmado.<br>- Posible derrumbe de edificio Canadá. Cuenta de twitter de La Razón de México y varias cuentas lo reportan.]]></description>
+        <styleUrl>#icon-1556-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1654022,19.4157981,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:22pm) Ures 13</name>
+        <description><![CDATA[- Un usuario reporta que ya NO se necesitan voluntarios.<br>- Desde las 6:30pm este lugar funge como punto de reunión para relevo de voluntarios para remover escombros en área Roma-Condesa. Solicitan que se lleve casco y guantes de carnaza. Información al 55640895 y 55845006, reporta La Barbajana ð‏ @yuneesativa en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1584807,19.4067564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:08pm) Torre Mural</name>
+        <description><![CDATA[Centro de acopio reúne víveres para Morelos. IMPORTANTE: Camiones salen a las 10:00pm. "Nos falta mucha herramienta (palas, picos, cascos). Nos faltan CAJAS, casi nadie trae", reporta personal del centro.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1825352,19.3635083,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:00pm) Calle Miguel Laurent 1154</name>
+        <description>Se solicitan relevo de voluntarios a partir de esta hora, reporta Aldo HS‏ @Aldonautico en Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1563116,19.3737971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:57pm) Parque Naucalli</name>
+        <description>En centro de acopio faltan biberones, detergente, crema corporal y gel antibacterial, reporta voluntario.</description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2408425,19.4930836,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:55pm) Medellín 153</name>
+        <description><![CDATA[- 6:55pm: Se requieren plantas de luz, diésel y gasolina en Medellín 153. Son necesarias para continuar la búsqueda en la noche, reporta Alberto Velarde‏  @velardeenlinea en Twitter.<br>- Reporta en Twitter Bass‏ @queweytancursi: "Doctora Elena Orozco pide ayuda está atrapada".]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1651903,19.413564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:20pm) Acopio para Morelos</name>
+        <description>Víveres en la casa roja, al lado de un autolavado. </description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1347559,19.374595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:04pm) Deportivo Del Sindicato De Los Electricistas</name>
+        <description>Albergue aún cuenta con mucho espacio, reporta voluntaria.</description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1285608,19.3058858,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(6:01pm) Deportivo Plan Sexenal</name>
+        <description><![CDATA[6:01pm: "Se requiere material de curación y medicamentos al centro de acopio ubicado en el deportivo plan sexenal, delegación Miguel Hidalgo. No más comida están saturados y se va a desperdiciar demasiada", reporta usuario de Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1729651,19.4542315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:42pm) Calle Amsterdam 301</name>
+        <description>Varios usuarios de Twitter reportan con texto y fotos que un edificio está a punto de colapsar.</description>
+        <styleUrl>#icon-1556-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1667859,19.413949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:36pm) Casa Universitaria del Libro UNAM</name>
+        <description><![CDATA["Mi amiga está ahí en este instante (20 sep- 17:36 hrs) y me pide ayuda para q publiquemos que requieren alimentos para perros y gatos, marcadores negros y leche en polvo (de bebé)", reporta usuaria vía correo electrónico.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1606426,19.4230353,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:34pm) Centro Civico Satélite</name>
+        <description><![CDATA["Sólo recibimos cosas, no es albergue, hay varios camiones y voluntarios recolectando cosas pero ya se esta acabando todo y estamos pidio apoyo para llevar mas material, comida, palas, etc. ya que siguen muchos camiones y camionetas disponibles y estan distribuyendo todo a las zonas afectadas", reportó usuaria vía correo electrónico]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2291654,19.5099764,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:29pm) Dr. Atl 176</name>
+        <description><![CDATA[- La cuenta de Twitter del restaurante confirma que ya no necesitan más comida.<br>- A partir de la 1:00pm se preparará comida para rescatistas y damnificados. Se recibirá pan para baguettes, pan de caja, bolillos, atún, mayonesa, lechuga fresca desinfectada, jitomate lavado, queso, chiles en rajas, tortillas de harina, botellas de agua, platos, empaques desechables para comida, verduras enlatadas y voluntarios. ]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.15635,19.4484305,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:20pm) Villa Olímpica</name>
+        <description><![CDATA["Estamos llenos de comida y cobertores, faltan materiales de curación", reporta Gustavo Serrano 〽️‏  @gooz25 en Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1858601,19.2978508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(5:19pm) Avenida Universidad 800</name>
+        <description><![CDATA["Piden medicamentos y artículos de higiene, ya no hace falta comida", reporta Ángel Plascencia‏ @Angel_pc en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1505894,19.3921665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(4:55pm) Obrera</name>
+        <description>Los voluntarios siguen haciendo falta, reporta HuffPost México.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1395519,19.4146406,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(4:53pm) Monumental Plaza de Toros México</name>
+        <description><![CDATA["A la par de víveres e insumos faltan manos para mover cosas", reporta Lu‏ @MisesVainillA en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1800913,19.3829393,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(4:35pm) Multifamiliar Tlalpan Edificio 1 C</name>
+        <description>Derrumbe confirmado por vecinos.</description>
+        <styleUrl>#icon-1556-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1421539,19.3382918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(4:12pm) Delegación Magdalena Contreras</name>
+        <description>Zona del Ajusco, el Ocotal, Ermitaño, Lomas de San Bernabé, no han recibido atenciones, reportan usuarios.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2415082,19.3048555,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(3:30pm) Jardín Pushkin</name>
+        <description><![CDATA[- 3:30pm: se solicitaban autos y motocicletas para ayudar a distribuir víveres.<br>- Punto de reunión de mascotas. <br>- Solicitan bolsas para hacer despensas, y equipo de atención a urgencias pero la gente no está llegando. También se pedía hace unos minutos diclofenaco, medicamento para el dolor, pomadas, vendas, guantes, cinta microporosa.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.154167,19.420378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(3:17pm) Calle Gabriel Mancera & Calle Concepción Beistegui]]></name>
+        <description><![CDATA[3:17pm: "Los voluntarios requieren Baños portátiles", reporta Uriel Miranda‏ @Uriel_ITS en Twitter.<br>- "En el centro de acopio de Gabriel Mancera y Concepción Beistegui necesitan palas, picos, guantes de carnaza y voluntarios", reporta el HuffPost México en Twitter.<br>- "Solicitan alcohol, agua y jeringas", reporta el HuffPost México en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1635983,19.3890289,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(3:05pm) Eje 7A Sur & Prol Xochicalco]]></name>
+        <description><![CDATA["Se necesitan pilas de cualquier tipo, medicinas en gral. y gasolina", reporta Edgar Portillo‏ @pilluum en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1586659,19.3670783,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(3:03pm) Calle Guadalupe I. Ramírez 4</name>
+        <description><![CDATA["Centro de acopio y albergue en el centro de Xochimilco, foro Quetzalcóatl. Se necesita sobre todo herramienta, víveres ya no urgen", reporta Adrián‏ @chhaarless en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1169171,19.2364847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(3:01pm) Alfonso Reyes 235</name>
+        <description><![CDATA["Centro de acopio que necesita palas y material para remover escombro", reporta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1732915,19.4067434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(3:00pm) Puebla 282</name>
+        <description>Marina pide una motosierra.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1691105,19.4210929,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(2:58pm) Eje 2 Pte & Calle Zacatecas]]></name>
+        <description><![CDATA["Hay un edificio con mucho daño yéndose para atrás. Ya hay gente viendo eso, al parecer siguen dos personas que no pueden bajar del piso 7", reporta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1635242,19.4150749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:57pm) Colima 382</name>
+        <description><![CDATA["Un edificio de dos niveles con un spa pide. Brigadas ciudadanas reportan que está a punto de colapsar", comenta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.169957,19.4175251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(2:52pm) Eje 1 Ote & Calzada de Las Bombas]]></name>
+        <description><![CDATA["Estan pidiendo hielo para poder guardar la insulina, no permiten el paso a gente sin equipo de protección", reporta David Isunza‏ @Astrhate en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1238831,19.3113445,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:46pm) Fray Servando Teresa de Mier 77</name>
+        <description>Se solicita apoyo para relevo de voluntarios, reporta Wada‏  @Wadashit en Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1393222,19.4240748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(2:42pm) Calle Juan Aldama & Sol]]></name>
+        <description><![CDATA["Están recibiendo escombro y herramienta, pero aún no reciben herramientas", reporta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1499664,19.4485727,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:37pm) Av. San Jerónimo 819</name>
+        <description><![CDATA["Solicitan CAJAS de CARTÓN para transportar víveres y productos de higiene", reporta David Isunza‏ @Astrhate en Twitter. ]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2155573,19.3297532,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:31pm) Calle Patricio Sanz 45</name>
+        <description><![CDATA["Ya no hay gente pero un edificio está a punto de caer", reporta usuario.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1686858,19.3984142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(2:30pm) Puebla & Valladolid]]></name>
+        <description><![CDATA["Se necesita ropa y comida enlatada", reporta David Isunza‏ @Astrhate en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1685912,19.4213454,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(2:27pm) Av. Division del Nte. & Gral. Emiliano Zapata]]></name>
+        <description><![CDATA[- 2:27pm: "Urge agua, comida y medicamentos", reporta BuzzFeed México.<br>Piden martillos, cascos, guantes y manos para mover escombros.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1556306,19.3662823,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(2:11pm) Dr José María Vertiz 1183</name>
+        <description><![CDATA["Necesitamos cajas y tuppers desechables en Vertiz 1183 urgente", reporta La fugitiva‏ @palomarrazola en Twitter.]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1536504,19.3784077,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(1:44pm) Parque Deportivo Miguel Alemán</name>
+        <description><![CDATA["En Lindavista hace falta cajas, cinta adhesiva, escobas, material de curación, comida para bebé, bolsas. Acopio en deportivo Miguel Alemán", reporta Serapaz Mexico‏ @SerapazMexico en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1283458,19.4931333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(1:42pm) Zapata y Tlalpan</name>
+        <description><![CDATA["Necesitan cuerdas en zapata esq tlalpan por favor RT hay dos personas atrapadas", reporta en Twitter La fugitiva‏ @palomarrazola.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1445786,19.3000913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(1:30pm) Eje 2 Pte & Cda. Nicolás San Juan]]></name>
+        <description><![CDATA["Muchos voluntarios en la Del Valle pero lo que más hace falta son herramientas y agua de sabor", reporta en Twitter Laus‏ @laumelgarejo.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1633509,19.3900522,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(1:26pm) Calle Amsterdam & Calle Huichapan]]></name>
+        <description>Topos solicitan herramientas de recambio, reporta HuffPost México en Twitter.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1685308,19.415698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(1:02pm) Av. Division del Nte. 175</name>
+        <description>Aún se necesitan voluntarios. Edificio colapsado con gente, reporta en Twitter Lola @Anny__Lane</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1496637,19.3458435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:48pm) Av. Álvaro Obregón 286</name>
+        <description>Se necesita atropina, epinefrina, cateter, suero, férula, gasas, tanques de oxígeno, cubetas, pilas, tijeras, lámparas, baterías, sábanas, toallas, reporta en Twitter Elizabeth‏ @ElizaAlbarran</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1685106,19.4166546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(12:35pm) Eje 2 Pte & Escocia]]></name>
+        <description><![CDATA[En actualización, se dice que hubo derrumbe pero es falso.<br>Anteriormente reportaron: "Tres edificios están a punto de colapsar", reporta @juliangf74 en Twitter.<br>"Se requieren RELEVOS en ESCOCIA Y GABRIEL MANCERA. No más agua ni comida. Llevar casco y guantes", dice en Twitter La fugitiva‏ @palomarrazola]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1639336,19.3876699,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:21pm) Parque de los Venados (Parque Francisco Villa)</name>
+        <description>BuzzFeed reporta que se solicitan herramientas de rescate. Picos, palas, lámparas, guantes, etcétera.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1561402,19.3721979,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(12:18pm) Av. Álvaro Obregón & Av Oaxaca]]></name>
+        <description>TimeOut reporta que se necesita material de curación, cascos y herramientas como pinzas y picos.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1693948,19.4164957,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:13pm) Medellín y Viaducto</name>
+        <description>HuffPost México reporta la caída de un edificio.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1623616,19.4028519,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:46am) Sierravista & Coquimbo]]></name>
+        <description>Dice Protección Civil que aún hay gente atrapada, pero hay riesgo de derrumbe. Cuidado.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.123367,19.4930947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:43am) 20 de Noviembre</name>
+        <description><![CDATA["Hay muchos derrumbes de casas y gente atrapada en Xochimilco. Se necesita gente para auxiliar a los atrapados en los escombros", reporta en Twitter Vanessa Puga‏ @Nereavpv.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0733805,19.2460721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(11:15am) Calz. Obrero Mundial & Calle Torreón]]></name>
+        <description><![CDATA["Sólo se requieren herramientas: palas, picos, cascos, guantes, sierras eléctricas, sinsel, mazos, cuerdas, pilas, extensiones, glucómetros", reporta en Twitter Laus‏ @laumelgarejo.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1611227,19.4014377,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:13am) Holiday Inn México Coyoacan</name>
+        <description><![CDATA["Se acaba de derrumbar edificio en Calzada de Tlalpan y Zapata, junto al Holiday Inn. ¡Urgen cortadoras y sierras eléctricas!", reporta en Twitter El Lector‏ @LiteraturayMas_ .]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.143107,19.363223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(11:08am) Universidad Iberoamericana, Puerta 9</name>
+        <description><![CDATA["Necesitamos cajas, grandes de preferencia", dice en Twitter @brozoxmiswebs.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2637948,19.3681344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:51am) Zócalo</name>
+        <description><![CDATA["Requerimos apoyo profesional:<br>* Personal de salud para armar botiquines <br>* Rescatistas de montaña", dice SEGOB CDMX.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1332049,19.4326018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:44am) Av Nuevo León 89</name>
+        <description><![CDATA["Necesitan marcadores negros para reconocer a la gente rescatada en centro de acopio", reporta usuario en Twitter.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1722976,19.4119538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:38am) Café de Raiz</name>
+        <description><![CDATA["Necesitamos un triciclo como de tamales para ir a repartir desayunos x las calles pequeñas de la Roma y colonias cercanas", pide personal del café. Están haciendo lonches de manera permanente.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1569218,19.4176709,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(10:32am) Av. Álvaro Obregón & Av Nuevo León]]></name>
+        <description>Usuario dice que se requiere gente para armar botiquines.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1696354,19.4162562,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(10:18am) Bretaña & Irolo]]></name>
+        <description><![CDATA["En Bretaña e Irolo en Portales necesitan cubre bocas rígidos y gotas para los ojos", dice usuaria.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1376496,19.3731188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(10:18am) La Estela de luz</name>
+        <description><![CDATA["Ecobici instaló un centro de acopio y solicita ciclistas para trasladar ayuda a zonas afectadas", dice BuzzFeed México."La lluvia no nos detiene", publica el Centro Cultural Digital. Es un lugar de descanso, baño, wifi y conexión para cargar baterías para brigadistas.]]></description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1756764,19.4229704,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(9:50am) Av. Division del Nte. & Av. Emperadores]]></name>
+        <description>Piden martillos, cascos, guantes y manos para mover escombros.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.156025,19.3676721,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(9:43am) Llano de la Torre Sucursal Venados</name>
+        <description>Se necesitan medicamentos y voluntarios.</description>
+        <styleUrl>#icon-1541-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1564332,19.36862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sierravista & Calle Riobamba]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.124284,19.4941488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Laguna de Términos & Lago Cuitzeo]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1743969,19.4424248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Maria Enriqueta Camarillo</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.166848,19.3985921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Escocia & Nicolás San Juan]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1624603,19.3873154,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Eje 5 Sur & Edimburgo]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1636724,19.3865934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Miravalle & Balsas]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1405787,19.3607118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calle Concepción Beistegui & Calle Yacatas]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1560835,19.3873457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balsas 18</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1402191,19.3605541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Av. Division del Nte. & Calz de las Brujas]]></name>
+        <description>HAY NIÑOS ATRAPADOS. Se necesita oxígeno, agua, comida, plantas de luz, todo el apoyo posible. Toallas, sábanas y cobijas. Insulina, mascarillas infantiles, dopamina, adrenalina, salbutamina intravenosa e inhalada, martillos y gatos hidráulicos.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1313808,19.2966443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Eje 2 Ote & Ermita Iztapalapa]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1219436,19.3576245,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[10 de Abril & Anenecuilco]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1099325,19.3166315,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Avenida Santa Ana & Ejido Santa Cruz Atoyac]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1249292,19.3294365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barrio 18</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1135932,19.2817425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calz. del Hueso & Rancho de Los Arcos]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1229904,19.3033546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Servicura Coyoacán</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1679517,19.3999572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Viad. Tlalpan & Calz. de Tlalpan]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1432154,19.3046852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calle Comonfort & Calle Jaime Nuno]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1350862,19.4451506,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Magnolia & Calle de Lerdo]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1428707,19.4425777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calle Mina & 2 de Abril]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1416908,19.4388871,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Av. Niños Heroes de Chapultepec & Calle Torres Adalid]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.147015,19.3878748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dr José María Vertiz 93</name>
+        <description>Se remueven escombros, se requiere apoyo.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1469892,19.4228588,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calle Salvador Díaz Mirón & Calle Sabino]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1599086,19.4492376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Eugenia & Edimburgo]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1636724,19.3865934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Eje 7 Sur & Av. Division del Nte.]]></name>
+        <description>Actualizado 6:54. Sólo se necesitan voluntarios para ir bajo los escombros. Y silencio.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1568055,19.3703334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Calle Bajío & Calle Torreón]]></name>
+        <description>Actualizado 11:21pm. Reportan derrumbe reciente. </description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1616705,19.4040833,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calle Galicia 442</name>
+        <description>Actualizado 11:07pm: Se necesita agua, comida, hielos y medicinas.</description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1459649,19.3882793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colecta para niños en Oaxaca, en Bosque de Enebros 57</name>
+        <description><![CDATA[Hasta las 8:00pm. "Colecta únicamente para niños. Va para Oaxaca. Se necesita ropa, pañales y juguetes", reporta Mariana‏ @petitedecadence en Twitter.]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2556402,19.3919842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Hospitales</name>
+      <Placemark>
+        <name>Primeros auxilios, consulta médica y apoyo psicológico de Médica Sur</name>
+        <description><![CDATA["Apoyo sin costo para primeros auxilios, consulta médica y apoyo psicológico en nuestro dispensario médico. Sillón de Mendoza 100, Col. Toriello Guerra, Tlalpan", reporta personal del corporativo Médica Sur.]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1601873,19.2959246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Atención médica gratuita en Medica Sur</name>
+        <description><![CDATA[9:55am - 21 de sept.: "Servicio de urgencias sin costo a lesionados por el sismo en nuestro hospital", reporta Manuel Del Castillo, personal del corporativo. ]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1614979,19.2975937,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital Infantil de México, Federico Gómez</name>
+        <description><![CDATA["Nuestro hospital está abierto y habilitado para la atención médica y quirúrgica de las personas afectadas por el temblor", nos reportó Columba Larios Medina, jefa de residentes quirúrgicos del Hospital Infantil de México Federico Gómez.]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1513162,19.4108878,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ensenada 22</name>
+        <description><![CDATA[Atención a mascotas. "Hay montón de comida y veterinarios", reporta usuario Si, ¡soy yo! ॐमणिपद @GeekyChik en Twitter.]]></description>
+        <styleUrl>#icon-1507-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1744659,19.4101674,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital Angeles Mocel Torre de Consultorios</name>
+        <description><![CDATA["Se atiende a cualquier brigadista lesionado gratis (cosas traumatologicas) en el hospital Ángeles Mocel, Consultorio numero 1 (torre de consultorios). <br>Si alguien puede colaborar, hacen falta: yesos, guantes, medicinas, jeringas, alcohol, torundas, huata, vendaje elástico, algodón en capa y material de curación", reporta usuaria vía correo electrónico.]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1855493,19.4104579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Instituto Nacional de Pediatría</name>
+        <description><![CDATA[- (4:38pm) El INP informó en comunicado que el Instituto se encuentra en plenas capacidades para continuar operando.<br><br>Se necesita agua embotellada, papel higiénico, pañales para bebé, leche en polvo, jeringas de 5 y 10 mililitros. torundas, alcohol, cateter para suministro de oxígeno con tubo de conexión, canula nasal de plástico de diámetro interno de 2 mililitros, extensiones de luz, detergente y comida para pasar la noche. ]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1853337,19.3060832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sedna Hospital</name>
+        <description><![CDATA["Pacientes que se hayan quedado sin hemodiálisis por clínicas fuera de servicio a consecuencia del sismo, se les dará tratamiento gratuito el día de hoy", dice el hospital en su Twitter.]]></description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1740479,19.3032575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital 20 de Noviembre</name>
+        <description>Hay 120 camas para adultos y 20 para niños, 80 médicos de todas las especialidades</description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1711376,19.3719364,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital Valle Ceylan</name>
+        <description>SE ESTÁ EVACUANDO EL HOSPITAL</description>
+        <styleUrl>#icon-1808-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1784755,19.5365363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Magdalena de Las Salinas</name>
+        <description>Actualizado 6:56: se necesita sangre. Todo dispuesto para recibir a pacientes graves, porque es hospital de tercer nivel. </description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1411262,19.4782951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Medico ABC - Campus Observatorio</name>
+        <description>Recibe pacientes en urgencias sin costo.</description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2034149,19.4000673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital Angeles del Pedregal</name>
+        <description>Brindan consultas gratuitas</description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2205768,19.3119327,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hospital Angeles Lindavista</name>
+        <description>Brinda consultas gratuitas</description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.130148,19.486621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Médico Nacional Siglo XXI</name>
+        <description>Se necesita ayuda. Está atendiendo gratuitamente.</description>
+        <styleUrl>#icon-1808-097138</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1527171,19.4099388,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cruz Roja Mexicana Sede Nacional</name>
+        <description>Actualizado 8:47pm. La Cruz Roja reporta que ya no se necesitan voluntarios, sólo productos médicos.</description>
+        <styleUrl>#icon-1808-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2089885,19.4378287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Albergues</name>
+      <Placemark>
+        <name>Ciudad Deportiva Magdalena Mixhuca</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0885257,19.4047139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Delegación Iztacalco</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0971625,19.3957175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Universidad Iberoamericana</name>
+        <description><![CDATA["Comunidad podrá permanecer en áreas comunes de IBERO e, incluso, en caso de necesidad, tendrá opción de pasar la noche en las instalaciones".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.264007,19.3700747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estudios Argos</name>
+        <description><![CDATA["¡AVISO! PONEMOS A DISPOSICIÓN DE LAS AUTORIDADES Y DE LA CIUDADANÍA NUESTRAS INSTALACIONES. PODEMOS SER ALBERGUE. COMPARTE PARA AYUDAR".]]></description>
+        <styleUrl>#icon-1639-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2012125,19.5417843,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Deportivo La Joya</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1682229,19.2794671,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque México</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1691057,19.411927,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jardín Pushkin</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.154167,19.420378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Social y Cultural Grupo Modelo</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1689678,19.443235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Deportivo José María Morelos y Pavón</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1933737,19.4489988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parque Lira</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.18751,19.4039852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Delegación Azcapotzalco</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1843859,19.4840941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Social y Deportivo Rosario Iglesias Rocha</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1211187,19.3032979,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Centro Deportivo "Benito Juárez"]]></name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1586286,19.3715078,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro de Asistencia e Integración Social Villa Mujeres</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1548752,19.5070796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Casa Elena Poniatowska</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0683174,19.4150142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centro Social Fraccionamiento Coyuya</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.116821,19.401274,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Plaza del Estudiante</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1284223,19.4406296,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>CIAM</name>
+        <styleUrl>#icon-1639-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.0815569,19.3933219,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Voluntarios (puntos de reunión)</name>
+      <Placemark>
+        <name>Escuadrón de Rescate y Urgencias Médicas</name>
+        <styleUrl>#icon-1680-FF5252-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1340965,19.4222214,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cruz Roja Mexicana Sede Nacional</name>
+        <description><![CDATA[Actualizado 8:55pm. Según Loret de Mola: "Motociclistas voluntarios se organizan en Cruz Roja de Polanco para llevar agua, lámparas y pilas a los afectados en #CDMX". ]]></description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2089885,19.4378287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Estadio Olímpico Universitario</name>
+        <description>Actualizado 11:25pm: ya NO se requieren voluntarios. Habrá relevos mañana a partir de las 5:00am.</description>
+        <styleUrl>#icon-1680-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1921777,19.3319125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Falsos reportes</name>
+      <Placemark>
+        <name>(11:59am) Falso rumor sobre colapso en Av Pacífico 455</name>
+        <description><![CDATA[11:59am - 21 de sept.: "Comerciante local dijo por teléfono que el edificio está desalojado. Información de colapso es falsa", reporta Susana Moriel.]]></description>
+        <styleUrl>#icon-1898-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1478092,19.3350086,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(7:23pm) El Plaza Condesa</name>
+        <description><![CDATA[- 7:23pm: "estructura de acero no está comprometida, pero sí ventanas; nada de qué preocuparse estructuralmente. El Plaza NO está por colapsar", dijo uno de los dueños del Plaza en Foro TV<br>Por altavoces alertan que Plaza Condesa está a punto de derrumbarse, advierten usuarios.]]></description>
+        <styleUrl>#icon-1898-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1719522,19.4132032,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[FALSO Rampa Rómulo O'Farrill]]></name>
+        <description>La información sobre rampa de Periférico hacia Rómulo O´ Farril es falsa; sin daño estructural y en condiciones de operar, aclara la Secretaría de Obras y Servicios del Gobierno de la Ciudad de México.</description>
+        <styleUrl>#icon-1898-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1993103,19.3559867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(4:25pm) Eje 2 Ote & Viad. Río de la Piedad]]></name>
+        <description>Este video (https://www.facebook.com/luna.pausalinas/videos/2008361469177757/) reporta un derrumbe en esta ubicación. Usuario fue al sitio, tomó fotos y reporta que es falso. Oficiales del lugares confirmaron que afortunadamente nada ocurrió.</description>
+        <styleUrl>#icon-1898-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1221715,19.4046917,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[(12:01pm) FALSO. Av. Division del Nte. & América]]></name>
+        <description>Se reportó de derrumbe en esta ubicación. Usuarios in situ reportan que es falso. </description>
+        <styleUrl>#icon-1898-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.1496848,19.3453856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>(12:23am) Santa Rosa Xochiac</name>
+        <description>Daños en casas, requieren apoyo para remover escombros </description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            -99.2882606,19.3239229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</km

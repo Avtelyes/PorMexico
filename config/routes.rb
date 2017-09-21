@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   resources :posts
   post 'posts/:id/hide' => 'posts#hide', as: :delete_post
+  get 'maps' => 'locations#maps'
 
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
