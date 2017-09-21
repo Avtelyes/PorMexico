@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170920194104) do
+ActiveRecord::Schema.define(version: 20170921003324) do
+
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "content"
+    t.string   "location"
+    t.string   "category"
+    t.string   "status"
+    t.string   "phone"
+    t.string   "priority"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
+  end
+
+  create_table "posts_requirements", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer "post_id",        null: false
+    t.integer "requirement_id", null: false
+  end
+
+  create_table "requirements", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "provider"
@@ -20,6 +44,10 @@ ActiveRecord::Schema.define(version: 20170920194104) do
     t.datetime "oauth_expires_at"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "email"
+    t.string   "fb_profile"
+    t.string   "location"
   end
 
+  add_foreign_key "posts", "users"
 end
