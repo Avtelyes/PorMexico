@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Derrumbes, albergues, hospitales y voluntariado sismo CDMX</name>
+    <description><![CDATA[Última actualización 9:53am del 21 de septiembre.<br>Favor de revisar con detenimiento los horarios y la descripción de cada punto del lado izquierdo. <br>Para colaborar, escribe a @JannTM en Twitter o a juantolentino.morales@gmail.com]]></description>
+    <NetworkLink>
+      <name>Derrumbes, albergues, hospitales y voluntariado sismo CDMX</name>
+      <Link>
+        <href><![CDATA[http://www.google.com/maps/d/kml?forcekml=1&mid=13B_gbt3e5RWk_6xQoQ15xxhGOFs]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>

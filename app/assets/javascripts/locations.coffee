@@ -8,14 +8,6 @@ jQuery ->
 
   window.initMap = ->
     getLocation()
-    if $('#map').size() > 0
-      map = new google.maps.Map document.getElementById('map'), {
-        center: {lat: 19.4357, lng: -99.1439}
-        zoom: 8
-      }
-      map.addListener 'click', (e) ->
-        placeMarkerAndPanTo e.latLng, map
-        updateFields e.latLng
 
   placeMarkerAndPanTo = (latLng, map) ->
     markersArray.pop().setMap(null) while(markersArray.length)
@@ -31,21 +23,42 @@ jQuery ->
 
   getLocation = ->
     if navigator.geolocation
-      navigator.geolocation.getCurrentPosition(showPosition)
+      navigator.geolocation.getCurrentPosition(createMap)
 
   showPosition =  (position) ->
     alert position.coords.latitude + " long " + position.coords.longitude
 
-    #
-    #function getLocation() {
-    #if (navigator.geolocation) {
-     # navigator.geolocation.getCurrentPosition(showPosition);
-    #  } else {
-    #  x.innerHTML = "Geolocation is not supported by this browser.";
-#  }
-#}
+  createMap = (position) ->
+    if $('#map').size() > 0
+      map = new google.maps.Map document.getElementById('map'), {
+        center: {lat: position.coords.latitude, lng: position.coords.longitude}
+        zoom: 15
+      }
+      markerCurrentLocation = new google.maps.Marker({
+        position: {lat: position.coords.latitude, lng: position.coords.longitude},
+        title: "Ubicación actual"
+      })
+      markerCurrentLocation.setMap(map)
+      map.addListener 'click', (e) ->
+        placeMarkerAndPanTo e.latLng, map
+        updateFields e.latLng
 
-  #function showPosition(position) {
-    # x.innerHTML = "Latitude: " + position.coords.latitude +
-#"<br>Longitude: " + position.coords.longitude;
-#}
+      #Load external info
+      externalKML = "ExternalCDMX.kml"
+      kmlLayer = new google.maps.KmlLayer(externalKML,{
+        #suppressInfoWindows: true,
+        preserveViewport: true,
+        map: map
+      })
+      #var kmlLayer = new google.maps.KmlLayer(src, {
+       # suppressInfoWindows: true,
+        #preserveViewport: false,
+       # map: map
+      #});
+       # var marker = new google.maps.Marker({
+        #  position: myLatlng,
+         # title:"Hello World!"
+        #});
+
+#// To add the marker to the map, call setMap();
+#marker.setMap(map);
