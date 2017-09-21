@@ -58,7 +58,7 @@ class PostsController < ApplicationController
      if @post.save
         # format.html { render :index, notice: 'Post was successfully created.' }
         # format.json { render :index, status: :created, location: @post }
-        redirect_to post_path
+        redirect_to posts_path
       else
         render plain:"Fail"
       end
@@ -86,6 +86,13 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url, notice: 'Post ha sido borrado.' }
       format.json { head :no_content }
     end
+  end
+
+  def help
+
+  end
+
+  def submit
   end
 
   private
