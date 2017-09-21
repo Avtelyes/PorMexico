@@ -22,6 +22,7 @@
     <br />
 
     Ubicación : <%= f.text_field :location , value: @instance['location'] %><br />
+    <div id="mapPost" style="height:580px;width:100%;margin:0 auto;"></div>
     Teléfono de Contacto : <%= f.text_field :phone %><br />
     Descripción   : <%= f.text_area :content %><br />
     <%= f.hidden_field :category, value: @instance['category'] %>
