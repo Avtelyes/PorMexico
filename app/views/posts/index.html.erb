@@ -23,15 +23,15 @@
            <% end %>
          <%= post.requirements.find_each do |req| %>
             <%= req.name %>,
-         <% end -%>
+         <% end %>
        </td>
         <td>
           <%= post.requirements.find_each do |req| %>
               <%= req.name %>,
-          <% end -%>
+          <% end %>
         </td>
         <td> <% if post.user.id == current_user&.id %>
-              <%= link_to "Borrar", controller: "posts", action: "hide", id: post, :method => :post %>
+              <%= link_to("Borrar", delete_post_path(id: post), method: :post) %>
           <% elsif post.category == "0" %>
               Ayudar
           <% elsif post.category == "1" %>

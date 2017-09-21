@@ -12,8 +12,11 @@ class PostsController < ApplicationController
   end
 
   def hide
-    @post.update(status: "hidden")
-    format.html { redirect_to "/posts", notice: 'Post removido.' }
+    post = Post.find(params[:id])
+    post.update(status: "hidden")
+    respond_to do |format|
+      format.html { redirect_to "/posts", notice: 'Post removido.' }
+    end
   end
 
   # GET /posts/1
