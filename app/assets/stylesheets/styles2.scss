@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'futura'; 
+    src: url('futura light bt.ttf'); 
+}
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "futura";
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+form{
+	text-align: center;
+}
+
+form h3{
+	margin: 10px;
+
+}
+
+.green{
+	color:green;
+}
+
+.help-type{
+	width: 30%;
+	text-align: left !important;
+}
+
+.help-type input{
+	margin: 0 auto;
+}
+
+.buttons{
+	margin: 16px auto;
+}
+
+.buttons button{
+	padding: 10px;
+	margin: 10px;
+	color:white;
+	border: none;
+	font-size: 1.1em;
+}
+
+.buttons .cancelar{
+	background-color: red;
+}
+
+.buttons .aceptar{
+	background-color: green;
+}
+
+.logo{
+	margin: 24px auto;
+	width: 30%;
+	max-width: 300px;
+}
+
+img{
+	width: 100%;
+}
+
+@media (max-width: 360px){
+	.help-type{
+		width:75% !important;
+	}
+}
+
+@media (max-width: 768px){
+	.help-type{
+		width: 55%;
+	}
+
+	textarea{
+		width: 90%;
+	}
+}
