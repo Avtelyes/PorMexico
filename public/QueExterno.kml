@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>¿Qué se necesita y dónde?</name>
+    <NetworkLink>
+      <name>Derrumbes, albergues, hospitales y voluntariado sismo CDMX</name>
+      <Link>
+        <href><![CDATA[http://www.google.com/maps/d/kml?forcekml=1&mid=13B_gbt3e5RWk_6xQoQ15xxhGOFs&lid=iZ2oOCVl7gg]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>

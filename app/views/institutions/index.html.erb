@@ -1,0 +1,11 @@
+<h1 id="institutionTitle">Instituciones en dónde se puede donar</h1>
+
+<% @institutions.each do |institution| %>
+    <div class="institution">
+      <h2><%= institution.title %></h2>
+      <p><%= institution.description  %></p>
+      <form action="<%= institution.url %>">
+        <button type="submit">Más información</button>
+      </form>
+    </div>
+<% end %>
