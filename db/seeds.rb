@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+categories = Requirement.create([{ name: 'Voluntario(s)'},{ name: 'Profesionista(s)'},{ name: 'Combustible'},
+                                 { name: 'Alimentos'}, { name: 'Herramientas'}, { name: 'Transporte'}, { name: 'Maquinaria'},
+                                 { name: 'Sangre'}, { name: 'Hospedaje'}, { name: 'Medicamento'}, { name: 'Ropa'}, { name: 'Otro'}]
+            )

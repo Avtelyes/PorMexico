@@ -1,0 +1,33 @@
+<h1>
+  <% if @instance['category'] == '0' %>
+      NECESITO AYUDA
+  <% elsif @instance['category'] == '1' %>
+      OFREZCO AYUDA
+  <% end %>
+</h1>
+
+<%= form_for @instance['post'], url: {controller: :posts, action: :create} do |f| %>
+
+    <h4> Categorías</h4>
+    <% if @instance['requirements'] -%>
+      <% @instance['requirements'].each do |requirement| -%>
+
+          <%= fields_for 'requirement[]' , requirement do |requirement_fields| -%>
+
+              <%= requirement.name %>
+              <%= requirement_fields.check_box :id %>
+          <% end -%>
+      <% end -%>
+    <% end -%>
+    <br />
+
+    Ubicación : <%= f.text_field :location , value: @instance['location'] %><br />
+    Teléfono de Contacto : <%= f.text_field :phone %><br />
+    Descripción   : <%= f.text_area :content %><br />
+
+    <%= hidden_field(:category, @instance['category']) %>
+
+    <%= f.submit "Create" %>
+<% end %>
+
+<%= link_to 'Back', posts_path %>

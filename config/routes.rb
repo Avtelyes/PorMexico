@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :locations
   get 'main/index'
 
   root 'main#index'
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
+  resources :posts
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
 
