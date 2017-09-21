@@ -2,8 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
-  lat_field = $('#location_latitude')
-  lng_field = $('#location_longitude')
+  lat_field = $('#post_location_latitude')
+  lng_field = $('#post_location_longitude')
   markersArray = []
 
   window.initMap = ->

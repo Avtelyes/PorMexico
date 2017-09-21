@@ -29,7 +29,7 @@
     <div id="mapPost" style="height:250px;width:100%;margin:0 auto;"></div>
     <%= f.fields_for :location do |fact| %>
         <%= fact.hidden_field :address %>
-        <%= fact.text_field :latitude %>
+        <%= fact.hidden_field :latitude %>
         <%= fact.hidden_field :longitude %>
     <% end %>
     <h3 class="red">Teléfono de Contacto:</h3>
