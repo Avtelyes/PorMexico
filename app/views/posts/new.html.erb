@@ -24,8 +24,7 @@
     Ubicación : <%= f.text_field :location , value: @instance['location'] %><br />
     Teléfono de Contacto : <%= f.text_field :phone %><br />
     Descripción   : <%= f.text_area :content %><br />
-
-    <%= hidden_field(:category, @instance['category']) %>
+    <%= f.hidden_field :category, value: @instance['category'] %>
 
     <%= f.submit "Create" %>
 <% end %>

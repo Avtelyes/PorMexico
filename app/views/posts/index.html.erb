@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>Publicaciones</h1>
 
 <table>
   <thead>
@@ -12,42 +12,40 @@
   <tbody>
 
   <% @posts.each do |post| %>
-      <tr>
-        <td> <%= post.user.name %></td>
-        <td> <%= post.content %></td>
-       <td>
-         <% if post.category == "0"%>
-             Necesito
-         <% elsif post.category =="1"%>
-             Quiere ayudar con
-           <% end %>
-         <%= post.requirements.find_each do |req| %>
-            <%= req.name %>,
-         <% end %>
-       </td>
-        <td>
-          <%= post.requirements.find_each do |req| %>
-              <%= req.name %>,
-          <% end %>
-        </td>
-        <td> <% if post.user.id == current_user&.id %>
-              <%= link_to("Borrar", delete_post_path(id: post), method: :post) %>
-          <% elsif post.category == "0" %>
-              Ayudar
-          <% elsif post.category == "1" %>
-              Solicitar
-          <% end %>
-        </td>
-        <td>
-          <%= post.helping_users.count %> persona(s) ayudando
-        </td>
-      </tr>
+      <div class="media">
+        <div class="media-left">
+          <a href>
+            <img alt="64x64" class="media-object" style="width: 64px; height: 64px;" src="<%= post.user.picture %>" data-holder-rendered="true">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><%= post.user.name %></h4>
+          <p><% if post.category == "0"%>
+                Necesito
+            <% elsif post.category =="1"%>
+                Quiere ayudar con
+            <% end %>
+            <%= post.requirements.find_each do |req| %>
+                <%= req.name %>,
+            <% end %>
+          </p>
+          <p><%= post.content %></p>
+          <p><%= post.helping_users.count %> persona(s) ayudando</p>
+          <p>
+            <% if post.user.id == current_user&.id %>
+                <%= link_to("Borrar", delete_post_path(id: post), method: :post) %>
+            <% elsif post.category == "0" %>
+                Ayudar
+            <% elsif post.category == "1" %>
+                Solicitar
+            <% end %>
+          </p>
+        </div>
+      </div>
     <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'Necesito Ayuda', new_post_path(:category => 0) %>
-<%= link_to 'Ofrecer Ayuda', new_post_path(:category => 1) %>
 

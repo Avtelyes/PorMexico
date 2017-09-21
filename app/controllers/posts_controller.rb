@@ -30,6 +30,8 @@ class PostsController < ApplicationController
     # if [0,1].include?(params[:category].to_i)
       instance['category'] = params[:category]
     # end
+    #puts "AQUI ESTA LA CATEGORIA: "
+    #puts instance['category']
     puts [0,1].include?(params[:category].to_i)
     instance['post'] = Post.new
     instance['requirements'] = Requirement.all
@@ -56,7 +58,7 @@ class PostsController < ApplicationController
      if @post.save
         # format.html { render :index, notice: 'Post was successfully created.' }
         # format.json { render :index, status: :created, location: @post }
-        render plain: "OK"
+        redirect_to post_path
       else
         render plain:"Fail"
       end

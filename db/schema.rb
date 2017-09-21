@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921040848) do
+ActiveRecord::Schema.define(version: 20170921092959) do
 
   create_table "helping_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "post_id", null: false
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20170921040848) do
     t.string   "email"
     t.string   "fb_profile"
     t.string   "location"
+    t.string   "picture"
   end
 
   add_foreign_key "posts", "users"

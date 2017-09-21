@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
       user.email    = auth.info.email
       user.location = auth.location
       user.fb_profile= "www.facebook.com/" + auth.uid
+      user.picture = auth.info.image
       user.save
     end
   end
