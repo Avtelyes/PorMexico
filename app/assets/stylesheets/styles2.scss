@@ -95,6 +95,12 @@ img{
 
 }
 
+.big-input{
+  min-width: 320px;
+  width: 40%;
+  border: 1px solid gray;
+}
+
 @media (max-width: 360px){
 	.help-type{
 		width:75% !important;

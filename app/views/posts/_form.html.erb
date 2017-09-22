@@ -38,16 +38,18 @@
     <div id="mapPost" style="height:250px;width:100%;margin:0 auto;"></div>
     <%= f.fields_for :location do |fact| %>
         <%= fact.hidden_field :address %>
-        <%= fact.text_field :latitude %>
+        <%= fact.hidden_field :latitude %>
         <%= fact.hidden_field :longitude %>
     <% end %>
     <h3 class="red">Teléfono de Contacto:</h3>
-    <%= f.text_field :phone %><br />
+    <%= f.text_field :phone , class:"big-input"%><br />
     <%= f.hidden_field :category, value: @post.category %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="buttons">
+      <%= button_tag  'Cancelar', type:'button', onclick: "location.href = '/posts'", class:"button cancelar" %>
+
+      <%= f.submit 'Guardar', class:"button aceptar" %>
+    </div>
 
     <div class="logo">
       <%= image_tag('XMX.png') %>

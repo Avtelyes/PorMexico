@@ -1,11 +1,22 @@
-<ul class="nav-bar">
+<ul class="nav-bar" style="overflow:scroll">
   <li class="logo"><%= image_tag('XMX.png') %></li>
   <li class="nav-button"><%= link_to 'Quiero Ayudar', new_post_path(:category => 1), class: "green-button" %></li>
   <li class="nav-button"><%= link_to 'Necesito Ayuda', new_post_path(:category => 0), class: "red-button" %></li>
-  <li class="nav-button"><%= link_to 'Aviso Importante', "/" %></li>
-  <li class="nav-button"><%= link_to "/",title:"search" do %> <i class="fa fa-search" aria-hidden="true"></i> <% end %></li>
-  <li><%= link_to image_tag('map.png', class:"nav-image"), "/" %></a></li>
+  <!--<li class="nav-button"><%= link_to 'Aviso Importante', "/" %></li>-->
+  <li class="nav-button filter-input">
+    <form action="/posts" name="filter" id="filter">
+      <input type="text" id="contains" name="contains">
+      <button type="submit" class="nav-image">
+        <i class="fa fa-search" aria-hidden="true" ></i>
+      </button>
+    </form>
+  </li>
+
+
+
+  <li><%= link_to image_tag('map.png', class:"nav-image"), "/maps" %></a></li>
   <li><%= link_to image_tag('donate.png', class:"nav-image opacidad"), "/" %></a></li>
 </ul>
 <div style="margin-top:100px;"></div>
+
 
