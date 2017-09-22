@@ -19,8 +19,8 @@ jQuery ->
     markersArray.push marker
 
   updateFields = (latLng) ->
-    lat_field.val latLng.lat()
-    lng_field.val latLng.lng()
+    lat_field.val latLng.lat
+    lng_field.val latLng.lng
 
   getAddress = () ->
 
@@ -33,11 +33,12 @@ jQuery ->
     alert position.coords.latitude + " long " + position.coords.longitude
 
   createMarker = (location) ->
-    new google.maps.Marker({
-      position: location,
-      label: "labels[i % labels.length]",
-      #icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-    })
+    if location.status == "active"
+      new google.maps.Marker({
+        position: location,
+        #label: "labels[i % labels.length]",
+        #icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+      })
 
   createMapNeed = (position) ->
     if $('#mapN').size() > 0
@@ -48,32 +49,9 @@ jQuery ->
         zoom: 5
       }
 
+      locations = JSON.parse($('#need_locations_list').children('input').attr("name").slice(18, $('#need_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
+
       #Load all locationsMarkers
-      locations = [
-        {lat: 19.4357, lng: -99.439},
-        {lat: 19.43, lng: -99.39},
-        {lat: 19.43, lng: -99.9},
-        {lat: 19.57, lng: -99.9},
-        {lat: 19.7, lng: -99.439},
-        {lat: 19.7, lng: -99.2439},
-        {lat: 19.57, lng: -99.639},
-        {lat: 19.457, lng: -99.7439},
-        {lat: 19.357, lng: -99.7439},
-        {lat: 19.457, lng: -99.6439},
-        {lat: 19.4357, lng: -99.5439},
-        {lat: 19.42357, lng: -99.61439},
-        {lat: 19.37, lng: -98.23},
-        {lat: 19.2357, lng: -98.1439},
-        {lat: 19.2357, lng: -100.1439},
-        {lat: 19.7357, lng: -110.1439},
-        {lat: 19.8357, lng: -98.1439},
-        {lat: 19.9357, lng: -99.1439},
-        {lat: 19.1357, lng: -96.1439},
-        {lat: 19.2357, lng: -95.1439},
-        {lat: 19.1357, lng: -94.1439},
-        {lat: 19.1357, lng: -93.1439},
-        {lat: 19.1357, lng: -91.1439}
-      ]
 
       #Create markers array from locations array
       markers = (createMarker location for location in locations)
@@ -87,16 +65,6 @@ jQuery ->
 
       #0 Necesita Ayuda
       #1 Ofrece ayuda
-
-      #Add everything to the map
-
-      #Add current location marker to map
-      placeMarkerAndPanTo {lat: position.coords.latitude, lng: position.coords.longitude}, map
-
-      #Listener to change current Position
-      map.addListener 'click', (e) ->
-        placeMarkerAndPanTo e.latLng, map
-        updateFields e.latLng
 
     if $('#mapO').size() > 0
       #Create map
@@ -106,31 +74,7 @@ jQuery ->
       }
 
       #Load all locationsMarkers
-      locations = [
-        {lat: 19.4357, lng: -99.439},
-        {lat: 19.43, lng: -99.39},
-        {lat: 19.43, lng: -99.9},
-        {lat: 19.57, lng: -99.9},
-        {lat: 19.7, lng: -99.439},
-        {lat: 19.7, lng: -99.2439},
-        {lat: 19.57, lng: -99.639},
-        {lat: 19.457, lng: -99.7439},
-        {lat: 19.357, lng: -99.7439},
-        {lat: 19.457, lng: -99.6439},
-        {lat: 19.4357, lng: -99.5439},
-        {lat: 19.42357, lng: -99.61439},
-        {lat: 19.37, lng: -98.23},
-        {lat: 19.2357, lng: -98.1439},
-        {lat: 19.2357, lng: -100.1439},
-        {lat: 19.7357, lng: -110.1439},
-        {lat: 19.8357, lng: -98.1439},
-        {lat: 19.9357, lng: -99.1439},
-        {lat: 19.1357, lng: -96.1439},
-        {lat: 19.2357, lng: -95.1439},
-        {lat: 19.1357, lng: -94.1439},
-        {lat: 19.1357, lng: -93.1439},
-        {lat: 19.1357, lng: -91.1439}
-      ]
+      locations = JSON.parse($('#offer_locations_list').children('input').attr("name").slice(18, $('#offer_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
 
       #Create markers array from locations array
       markers = (createMarker location for location in locations)
@@ -141,20 +85,6 @@ jQuery ->
 
       #Create mark cluster
       markerCluster = new MarkerClusterer(map, markers, options)
-
-      #0 Necesita Ayuda
-      #1 Ofrece ayuda
-
-      #Add everything to the map
-
-      #Add current location marker to map
-      placeMarkerAndPanTo {lat: position.coords.latitude, lng: position.coords.longitude}, map
-
-      #Listener to change current Position
-      map.addListener 'click', (e) ->
-        placeMarkerAndPanTo e.latLng, map
-        updateFields e.latLng
-
 
     if $('#mapPost').size() > 0
 
@@ -166,6 +96,9 @@ jQuery ->
 
       #Add current location marker to map
       placeMarkerAndPanTo {lat: position.coords.latitude, lng: position.coords.longitude}, map
+
+      #Update form values
+      updateFields {lat: position.coords.latitude, lng: position.coords.longitude}
 
       #Listener to change current Position
       map.addListener 'click', (e) ->

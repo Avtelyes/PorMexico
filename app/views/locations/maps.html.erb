@@ -5,3 +5,9 @@
 <h1>Ofrece Ayuda</h1>
 <div id="mapO" style="height:580px;width:100%;margin:0 auto;"></div>
 <iframe src="https://www.google.com/maps/d/embed?mid=13B_gbt3e5RWk_6xQoQ15xxhGOFs" width="100%" height="580"></iframe>
+<div id="need_locations_list">
+  <%= hidden_field :location, :value => @pairsNeed%>
+</div>
+<div id="offer_locations_list">
+  <%= hidden_field :location, :value => @pairsOffer%>
+</div>
