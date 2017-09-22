@@ -26,6 +26,7 @@
 
                   <%= requirement.name %>
                   <%= requirement_fields.check_box :id %>
+                  <br>
               <% end -%>
           <% end -%>
       <% end -%>
@@ -33,7 +34,7 @@
     </div>
     <br/>
     <h3 class="red">Descripción:</h3>
-    <%= f.text_area :content, rows:5, cols:80 %><br />
+    <%= f.text_area :content, rows:5, cols:80, required: true %><br />
     <h3 class="red">Ubicación :</h3>
     <div id="mapPost" style="height:250px;width:100%;margin:0 auto;"></div>
     <%= f.fields_for :location do |fact| %>
@@ -42,7 +43,7 @@
         <%= fact.hidden_field :longitude %>
     <% end %>
     <h3 class="red">Teléfono de Contacto:</h3>
-    <%= f.text_field :phone , class:"big-input"%><br />
+    <%= f.text_field :phone , class:"big-input", required: true%><br />
     <%= f.hidden_field :category, value: @post.category %>
 
     <div class="buttons">
