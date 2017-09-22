@@ -23,7 +23,7 @@
           <%= post.requirements.find_each do |req| %>
               <span class="underline"><%= req.name %></span>,
           <% end %>
-          en <i class="fa fa-map-marker" aria-hidden="true"></i> <b>Ciudad de México</b><hr style="border-color:#000"> <%= post.content %><br/></p>
+          en <i class="fa fa-map-marker" aria-hidden="true"></i> <b><%= post.location.address %></b><hr style="border-color:#000"> <%= post.content %><br/></p>
       </div>
       <% if post.category == "0"%>
           <span>Ayudado por: <%=post.helping_users.count %> persona(s)</span>
@@ -103,7 +103,7 @@
                 </div>
               </div>
               <% else %>
-                  <%= button_to("Cancelar", cancel_help_post_path(id: post), method: :post, class: "my-button b-red", :remote => false ) %>
+                  <%= button_to("Cancelar", cancel_help_post_path(id: post), method: :post, class: "my-button b-red", :remote => true ) %>
             <% end %>
         <% end %>
       <% end %>
