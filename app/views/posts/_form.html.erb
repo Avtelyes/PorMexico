@@ -47,7 +47,7 @@
     <%= f.hidden_field :category, value: @post.category %>
 
     <br>
-    <div id="reminder" class="alert alert-danger" style="display: none" role="alert"></div>
+    <!--<div id="reminder" class="alert alert-danger" style="display: none" role="alert"></div>-->
     <div class="buttons">
       <%= button_tag  'Cancelar', type:'button', onclick: "location.href = '/posts'", class:"button cancelar" %>
 
@@ -60,10 +60,10 @@
 <% end %>
 
 <script>
-    $('#new_post').submit(function() {  //When a form is submitted...
+    /*$('#new_post').submit(function() {  //When a form is submitted...
         if ($('#post_location_attributes_latitude').val() != 12) { //To see if it is empty...
             $( '#reminder' ).toggle().text( "¡No olvides de poner tu ubicación!" ).show().fadeOut( 4000 );
             return false;            //Don't submit the form
         }
-    });
+    });*/
 </script>
