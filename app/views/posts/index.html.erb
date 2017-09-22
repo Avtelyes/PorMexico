@@ -41,7 +41,7 @@
             <%= button_to("Borrar", delete_post_path(id: post), method: :post, class:"my-button b-red") %>
         <% elsif post.category == "0" %>
             <% if post.helping_users.where(id: current_user&.id).empty? %>
-              <%= button_to("Ayudar", help_post_path(id: post), id:"help", method: :post, class: "my-button b-green") %>
+              <%= button_to("Ayudar", post_path(id: post), id:"help", method: :get, class: "my-button b-green") %>
               <% else %>
                   <%= button_to("Cancelar", cancel_help_post_path(id: post), method: :post, class: "my-button b-red", :remote => true ) %>
             <% end %>
