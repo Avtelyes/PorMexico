@@ -33,58 +33,60 @@ jQuery ->
     alert position.coords.latitude + " long " + position.coords.longitude
 
   createMarker = (location) ->
-    if location.status == "active"
+    if location.status != "hidden"
       new google.maps.Marker({
         position: location,
         #label: "labels[i % labels.length]",
         #icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
       })
+    else
+      0
 
   createMapNeed = (position) ->
     if $('#mapN').size() > 0
 
       #Create map
-      map = new google.maps.Map document.getElementById('mapN'), {
+      mapN = new google.maps.Map document.getElementById('mapN'), {
         center: {lat: position.coords.latitude, lng: position.coords.longitude}
         zoom: 5
       }
 
-      locations = JSON.parse($('#need_locations_list').children('input').attr("name").slice(18, $('#need_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
-
-      #Load all locationsMarkers
+      locationsN = JSON.parse($('#need_locations_list').children('input').attr("name").slice(18, $('#need_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
 
       #Create markers array from locations array
-      markers = (createMarker location for location in locations)
+      markersN = (createMarker location for location in locationsN when location.status isnt 'hidden')
+
+      console.log(markersN)
 
       options = {
         imagePath: '../images/m'
       }
 
       #Create mark cluster
-      markerCluster = new MarkerClusterer(map, markers, options)
+      markerClusterN = new MarkerClusterer(mapN, markersN, options)
 
       #0 Necesita Ayuda
       #1 Ofrece ayuda
 
     if $('#mapO').size() > 0
       #Create map
-      map = new google.maps.Map document.getElementById('mapO'), {
+      mapO = new google.maps.Map document.getElementById('mapO'), {
         center: {lat: position.coords.latitude, lng: position.coords.longitude}
         zoom: 5
       }
 
       #Load all locationsMarkers
-      locations = JSON.parse($('#offer_locations_list').children('input').attr("name").slice(18, $('#offer_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
+      locationsO = JSON.parse($('#offer_locations_list').children('input').attr("name").slice(18, $('#offer_locations_list').children('input').attr("name").length-2).replace(/:/g, "").replace(/=>/g,":").replace(/lat/g, '"lat"').replace(/lng/g, '"lng"').replace(/status/g, '"status"'))
 
       #Create markers array from locations array
-      markers = (createMarker location for location in locations)
+      markersO = (createMarker location for location in locationsO when location.status isnt 'hidden')
 
       options = {
         imagePath: '../images/m'
       }
 
       #Create mark cluster
-      markerCluster = new MarkerClusterer(map, markers, options)
+      markerClusterO = new MarkerClusterer(mapO, markersO, options)
 
     if $('#mapPost').size() > 0
 

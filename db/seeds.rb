@@ -8,5 +8,5 @@
 
 categories = Requirement.create([{ name: 'Voluntario(s)'},{ name: 'Profesionista(s)'},{ name: 'Combustible'},
                                  { name: 'Alimentos'}, { name: 'Herramientas'}, { name: 'Transporte'}, { name: 'Maquinaria'},
-                                 { name: 'Sangre'}, { name: 'Hospedaje'}, { name: 'Medicamento'}, { name: 'Ropa'}, { name: 'Otro'}]
+                                 { name: 'Sangre'}, { name: 'Hospedaje'}, { name: 'Medicamento'}, { name: 'Ropa'}, { name: 'Otro'}, {name:'Higiene personal'}, {name: 'Artículos para mascotas'}]
             )
