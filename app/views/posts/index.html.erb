@@ -34,74 +34,14 @@
         <% if post.user.id == current_user&.id %>
             <%= button_to("Borrar", delete_post_path(id: post), method: :post, class:"my-button b-red") %>
         <% elsif  post.category == "1" %>
-            <%= button_to("Solicitar", help_post_path(id: post), method: :post, class: "my-button b-red", :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window' ) %>
-              <div id="modal-request" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel" style="text-align: center">Ayudar</h4>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-sm-4">
-                        Whatsapp
-                        <a href="https://api.whatsapp.com/send?phone=521<%= post.phone %>" target="_blank">
-                          <img class="img-responsive" src="images/whatsapp.png">
-                        </a>
-                      </div>
-                      <div class="col-sm-4">
-                        Facebook
-                        <a href="https://<%= post.user.fb_profile %>" target="_blank">
-                          <img class="img-responsive" src="images/facebook.png">
-                        </a>
-                      </div>
-                      <div class="col-sm-4">
-                        Teléfono
-                        <a href="tel:52<%= post.phone %>">
-                          <img class="img-responsive" src="images/phone.png">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <%= button_to("Solicitar", post_path(id: post), method: :get, class: "my-button b-red" ) %>
         <% end %>
       <% else %>
         <% if post.user.id == current_user&.id %>
             <%= button_to("Borrar", delete_post_path(id: post), method: :post, class:"my-button b-red") %>
         <% elsif post.category == "0" %>
             <% if post.helping_users.where(id: current_user&.id).empty? %>
-              <%= button_to("Ayudar", help_post_path(id: post), id:"help", method: :post, class: "my-button b-green", :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window' ) %>
-              <div id="modal-window" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel" style="text-align: center">Ayudar</h4>
-                    </div>
-                    <div class="modal-body row">
-                      <div class="col-sm-4">
-                        Whatsapp
-                        <a href="https://api.whatsapp.com/send?phone=521<%= post.phone %>" target="_blank">
-                          <img class="img-responsive" src="images/whatsapp.png">
-                        </a>
-                      </div>
-                      <div class="col-sm-4">
-                        Facebook
-                        <a href="https://<%= post.user.fb_profile %>" target="_blank">
-                          <img class="img-responsive" src="images/facebook.png">
-                        </a>
-                      </div>
-                      <div class="col-sm-4">
-                        Teléfono
-                        <a href="tel:52<%= post.phone %>">
-                          <img class="img-responsive" src="images/phone.png">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <%= button_to("Ayudar", help_post_path(id: post), id:"help", method: :post, class: "my-button b-green") %>
               <% else %>
                   <%= button_to("Cancelar", cancel_help_post_path(id: post), method: :post, class: "my-button b-red", :remote => true ) %>
             <% end %>
@@ -111,8 +51,9 @@
   </div>
 <% end %>
 
-<script>
+<%= render partial: 'show_modal' %>
 
+<script>
 </script>
 
 

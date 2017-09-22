@@ -4,6 +4,8 @@ class PostsController < ApplicationController
 
   before_action :set_post, only: [:show, :edit, :update, :destroy, :help, :cancel_help]
 
+  before_action :common_content
+
 
   # GET /posts
   # GET /posts.json
@@ -11,6 +13,7 @@ class PostsController < ApplicationController
     @posts = Post.where('status != ?', 'hidden')
     @posts = @posts.where('created_at > ?',  20.hours.ago)
     @posts = @posts.order("created_at DESC")
+    @shared_post = Post.first
     if params['category']
       @posts = @posts.where(category: params['category'])
     end
@@ -44,6 +47,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
   end
 
   # GET /posts/new
@@ -114,8 +118,12 @@ class PostsController < ApplicationController
   end
 
   def help
+    @shared_post = Post.find(params[:id])
     if @post.helping_users.where(id: current_user.id).empty?
       @post.helping_users << current_user
+    end
+    respond_to do |format|
+      format.js {render 'show_modal'}
     end
     render plain:"true"
   end
@@ -140,6 +148,10 @@ class PostsController < ApplicationController
     def set_post
       @post = Post.find(params[:id])
     end
+
+  def common_content
+    @shared_post
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params

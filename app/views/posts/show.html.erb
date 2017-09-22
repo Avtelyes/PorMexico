@@ -1,4 +1,24 @@
-<p id="notice"><%= notice %></p>
+<%= render 'application/navigation' %>
+<div class="col-sm-4">
+  Whatsapp
+  <a href="https://api.whatsapp.com/send?phone=521<%= @post.phone %>" target="_blank">
+    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/whatsapp.png">
+  </a>
+</div>
+<div class="col-sm-4">
+  Facebook
+  <a href="https://<%= @post.user.fb_profile %>" target="_blank">
+    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/facebook.png">
+  </a>
+</div>
+<div class="col-sm-4">
+  Teléfono
+  <a href="tel:52<%= @post.phone %>">
+    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/phone.png">
+  </a>
+</div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="buttons" style="text-align: center">
+  <%= button_tag  'Atrás', type:'button', onclick: "location.href = '/posts'", class:"button cancelar" %>
+</div>
+
