@@ -9,9 +9,9 @@ class LocationsController < ApplicationController
 
   def maps
     #@locations = ActiveRecord::Base.connection.execute("foo")
-    @NeedLocations = ActiveRecord::Base.connection.exec_query("SELECT * FROM locations INNER JOIN posts ON posts.location_id = locations.id AND posts.category = 1;")
+    @NeedLocations = ActiveRecord::Base.connection.exec_query("SELECT * FROM locations INNER JOIN posts ON posts.location_id = locations.id AND posts.category = 0;")
     #puts @NeedLocations
-    @OfferLocations = ActiveRecord::Base.connection.exec_query("SELECT * FROM locations INNER JOIN posts ON posts.location_id = locations.id AND posts.category = 0;")
+    @OfferLocations = ActiveRecord::Base.connection.exec_query("SELECT * FROM locations INNER JOIN posts ON posts.location_id = locations.id AND posts.category = 1;")
     pairs = []
     @NeedLocations.as_json.each do | item |
       pairs << {lat: item['latitude'], lng: item['longitude'], status: item['status']}
