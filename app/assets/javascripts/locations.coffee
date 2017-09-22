@@ -109,7 +109,7 @@ ready = ->
           updateFields e.latLng
 
 
-  
+
         #Load external info
         #externalKML = "../QueExterno.kml"
         #kmlLayer = new google.maps.KmlLayer({
@@ -117,6 +117,3 @@ ready = ->
         #  preserveViewport: true,
         #  map: map
         #})
-
-$(document).ready(ready)
-$(document).on('page:load', ready)
