@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post 'posts/:id/hide' => 'posts#hide', as: :delete_post
   get 'maps' => 'locations#maps'
   post 'posts/help' => 'posts#help', as: :help_post
+  post 'posts/cancel_help' => 'posts#cancel_help', as: :cancel_help_post
   post 'posts/submit' => 'posts#submit', as: :request_post
 
   resources :sessions, only: [:create, :destroy]
