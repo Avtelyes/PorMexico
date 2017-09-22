@@ -33,7 +33,7 @@
       <% if post.category == "1" %>
         <% if post.user.id == current_user&.id %>
             <%= button_to("Borrar", delete_post_path(id: post), method: :post, class:"my-button b-red") %>
-        <% elsif current_user && post.category == "0" %>
+        <% elsif current_user && post.category == "1" %>
             <%= button_to("Necesito tu Ayuda", help_post_path(id: post), method: :post, class: "my-button b-red", :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window' ) %>
               <div id="modal-request" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                 <div class="modal-dialog modal-lg" role="document">

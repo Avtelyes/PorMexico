@@ -47,17 +47,20 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    instance = {}
+    @post = Post.new
+    @post.location = Location.new
+    @post.category = params[:category].to_i
+    #instance = {}
     # if [0,1].include?(params[:category].to_i)
-      instance['category'] = params[:category]
+     # instance['category'] = params[:category]
     # end
     #puts "AQUI ESTA LA CATEGORIA: "
     #puts instance['category']
-    puts [0,1].include?(params[:category].to_i)
-    instance['post'] = Post.new
-    instance['requirements'] = Requirement.all
-    instance['location'] = Geocoder.address(request.remote_ip)
-    @instance = instance
+    #puts [0,1].include?(params[:category].to_i)
+    #instance['post'] = Post.new
+    #instance['post'].location = Location.new
+    @requirements = Requirement.all
+    #@instance = instance
   end
 
   # GET /posts/1/edit
@@ -81,7 +84,7 @@ class PostsController < ApplicationController
         # format.json { render :index, status: :created, location: @post }
         redirect_to posts_path
       else
-        render plain:"Fail"
+        render text: @post.errors.messages.to_s
       end
   end
 
@@ -139,7 +142,7 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      par = params.require(:post).permit(:content, :phone, :category)
+      par = params.require(:post).permit(:content, :phone, :category, :location_id, location_attributes: [:id, :address, :latitude, :longitude, :state])
       par['user_id'] = current_user.id
       par
     end

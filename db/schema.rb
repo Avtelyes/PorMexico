@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921092959) do
+ActiveRecord::Schema.define(version: 20170921231939) do
 
   create_table "helping_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer "post_id", null: false
@@ -29,25 +29,24 @@ ActiveRecord::Schema.define(version: 20170921092959) do
 
   create_table "locations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "address"
-    t.float    "latitude",                              limit: 24
-    t.float    "longitude",                             limit: 24
+    t.float    "latitude",   limit: 24
+    t.float    "longitude",  limit: 24
     t.string   "state"
-    t.datetime "created_at",                                       null: false
-    t.datetime "updated_at",                                       null: false
-    t.integer  "{:index=>true, :foreign_key=>true}_id"
-    t.index ["{:index=>true, :foreign_key=>true}_id"], name: "index_locations_on_{:index=>true, :foreign_key=>true}_id", using: :btree
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "content"
-    t.string   "location"
     t.string   "category"
     t.string   "status"
     t.string   "phone"
     t.string   "priority"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "location_id"
+    t.index ["location_id"], name: "index_posts_on_location_id", using: :btree
     t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
@@ -76,5 +75,6 @@ ActiveRecord::Schema.define(version: 20170921092959) do
     t.string   "picture"
   end
 
+  add_foreign_key "posts", "locations"
   add_foreign_key "posts", "users"
 end
