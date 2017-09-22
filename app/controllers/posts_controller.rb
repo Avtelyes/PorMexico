@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.where('status != ?', 'hidden')
     @posts = @posts.where('created_at > ?',  9.hours.ago)
+    @posts = @posts.order("created_at DESC")
     if params['category']
       @posts = @posts.where(category: params['category'])
     end
