@@ -40,6 +40,9 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'geocoder'
 
+#Paginating
+gem 'will_paginate', '~> 3.1.1'
+
 # Bootstrao stuff
 gem 'bootstrap-sass', '~> 3.3.6'
 

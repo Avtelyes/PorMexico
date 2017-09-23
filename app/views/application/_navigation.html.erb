@@ -1,5 +1,5 @@
 <ul class="nav-bar" style="overflow:scroll">
-  <li class="logo"><%= image_tag('XMX.png') %></li>
+  <li class="logo"><%= link_to image_tag('XMX.png'), posts_url, style: "padding:0" %></li>
   <li class="nav-button"><%= link_to 'Quiero Ayudar', new_post_path(:category => 1), class: "green-button" %></li>
   <li class="nav-button"><%= link_to 'Necesito Ayuda', new_post_path(:category => 0), class: "red-button" %></li>
   <!--<li class="nav-button"><%= link_to 'Aviso Importante', "/" %></li>-->

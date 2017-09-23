@@ -16,6 +16,10 @@ Rails.application.routes.draw do
   post 'posts/cancel_help' => 'posts#cancel_help', as: :cancel_help_post
   post 'posts/submit' => 'posts#submit', as: :request_post
 
+  get 'privacy' => 'pages#privacy'
+  get 'thanks' => 'pages#thanks'
+
+
   resources :sessions, only: [:create, :destroy]
   resource :main, only: [:show]
   get 'institutions' => 'institutions#index'

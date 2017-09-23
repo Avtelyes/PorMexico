@@ -1,30 +1,20 @@
-<div id="modal-window" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="text-align: center">Ayudar</h4>
-      </div>
-      <div class="modal-body row">
-        <div class="col-sm-4">
-          Whatsapp
-          <a href="https://api.whatsapp.com/send?phone=521<%= @shared_post.phone %>" target="_blank">
-            <img class="img-responsive" src="images/whatsapp.png">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          Facebook
-          <a href="https://<%= @shared_post.user.fb_profile %>" target="_blank">
-            <img class="img-responsive" src="images/facebook.png">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          Teléfono
-          <a href="tel:52<%= @shared_post.phone %>">
-            <img class="img-responsive" src="images/phone.png">
-          </a>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-sm-4">
+    Whatsapp
+    <a href="https://api.whatsapp.com/send?phone=521<%= @shared_post.phone %>" target="_blank">
+      <img class="img-responsive" src="images/whatsapp.png">
+    </a>
+  </div>
+  <div class="col-sm-4">
+    Facebook
+    <a href="https://<%= @shared_post.user.fb_profile %>" target="_blank">
+      <img class="img-responsive" src="images/facebook.png">
+    </a>
+  </div>
+  <div class="col-sm-4">
+    Teléfono
+    <a href="tel:52<%= @shared_post.phone %>">
+      <img class="img-responsive" src="images/phone.png">
+    </a>
   </div>
 </div>

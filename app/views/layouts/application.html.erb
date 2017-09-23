@@ -11,7 +11,20 @@
   </head>
 
   <body>
+  <%= render 'application/navigation' %>
+
   <%= yield %>
+
+  <div class="content container" style="border-top: 1px solid gray">
+    <div class="row">
+
+      <div class="col-xs-6 text-right col-xs-offset-6" >
+        <p class="margin-b-0"> Desarrollado por <b><a href="http://notecode.mx">NoteCode Company</a></b></p>
+        <a style="margin-right:20px" href="/privacy">Aviso de Privacidad</a>   <a  href="/thanks">Agradecimientos</a>
+      </div>
+    </div>
+    <!--// end row -->
+  </div>
   </body>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD77Yu3bUG5XHXt7x7_LeAp3_uQE6fCH08&callback=initMap" async defer></script>
 </html>

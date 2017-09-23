@@ -1,4 +1,3 @@
-<%= render 'application/navigation' %>
 <div style="margin-top:100px;"></div>
 <% @posts.each do |post| %>
   <div class="post-container">
@@ -51,10 +50,10 @@
   </div>
 <% end %>
 
-<%= render partial: 'show_modal' %>
+<div class="digg_pagination center">
+  <%= will_paginate @posts,  :previous_label => t('<- Anterior'), :next_label => t('Siguiente ->'), :page_links => false%>
+</div>
 
-<script>
-</script>
 
 
 

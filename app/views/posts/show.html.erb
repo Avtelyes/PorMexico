@@ -1,24 +1,28 @@
 <%= render 'application/navigation' %>
-<div class="col-sm-4">
-  Whatsapp
-  <a href="https://api.whatsapp.com/send?phone=521<%= @post.phone %>" target="_blank">
-    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/whatsapp.png">
-  </a>
-</div>
-<div class="col-sm-4">
-  Facebook
-  <a href="https://<%= @post.user.fb_profile %>" target="_blank">
-    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/facebook.png">
-  </a>
-</div>
-<div class="col-sm-4">
-  Teléfono
-  <a href="tel:52<%= @post.phone %>">
-    <img class="img-responsive" style="cursor: pointer; height: 400px; max-width: 400px;" src="/images/phone.png">
-  </a>
-</div>
+<div class="row" style="margin-top:100px">
+  <div class="col-md-offset-2 col-md-2 center col-sm-8 col-sm-offset-2">
+    <h1 class="center">Whatsapp</h1>
+    <a href="https://api.whatsapp.com/send?phone=521<%= @post.phone %>" target="_blank">
+      <img class="img-responsive" style="cursor: pointer;width:250px;" src="/images/whatsapp.png">
+    </a>
+    <h3><%= @post.phone %></h3>
+  </div>
+  <div class="col-md-2 center col-sm-8 col-sm-offset-2 col-md-offset-1">
+    <h1 class="center">Facebook</h1>
+    <a href="https://<%= @post.user.fb_profile %>" target="_blank">
+      <img class="img-responsive" style="cursor: pointer; width:250px; " src="/images/facebook.png">
+    </a>
+    <h4><%= @post.user.fb_profile %></h4>
+  </div>
+  <div class="col-md-2 center col-sm-8 col-sm-offset-2 col-md-offset-1">
+    <h1 class="center">Teléfono</h1>
+    <a href="tel:52<%= @post.phone %>">
+      <img class="img-responsive" style="cursor: pointer;width:250px;" src="/images/phone.png">
+    </a>
+    <h3><%= @post.phone %></h3>
+  </div>
 
-<div class="buttons" style="text-align: center">
-  <%= button_tag  'Atrás', type:'button', onclick: "location.href = '/posts'", class:"button cancelar" %>
 </div>
-
+<div class="buttons" style="text-align: center; margin-top:100px">
+  <%= link_to 'Atrás', :back, class:"button cancelar" %>
+</div>

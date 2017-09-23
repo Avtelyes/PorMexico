@@ -12,28 +12,17 @@ class PostsController < ApplicationController
   def index
     @posts = Post.where('status != ?', 'hidden')
     @posts = @posts.where('created_at > ?',  20.hours.ago)
-    @posts = @posts.order("created_at DESC")
     @shared_post = Post.first
     if params['category']
       @posts = @posts.where(category: params['category'])
     end
-    @posts= @posts.sort {|a,b| a.helping_users.count <=> b.helping_users.count}
     if params['contains']
-      result=[]
-      @posts.each do |post|
-        reqs = ""
-        post.requirements.each do |req|
-          reqs = reqs+ req.name
-        end
-        reqs = reqs + post.content
-        reqs = reqs + post.user.name
-        if reqs.downcase.include? params['contains'].downcase
-          result << post
-        end
-      end
-      @posts = result
+     @posts = @posts.to_a.select {|post| post.includes_filter(params['contains'])}
     end
-    @posts
+    @posts = @posts.to_a
+    @posts.sort  {|a,b| a.helping_users.count <=> b.helping_users.count}
+    @posts.sort {|a,b| a.created_at <=> b.created_at}
+    @posts  = @posts.paginate(:page => (params[:page] || 1), :per_page =>3)
   end
 
   def hide
