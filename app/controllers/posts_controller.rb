@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.where('status != ?', 'hidden')
-    @posts = @posts.where('created_at > ?',  20.hours.ago)
+    # @posts = @posts.where('created_at > ?',  20.hours.ago)
     @shared_post = Post.first
     if params['category']
       @posts = @posts.where(category: params['category'])
@@ -20,8 +20,8 @@ class PostsController < ApplicationController
      @posts = @posts.to_a.select {|post| post.includes_filter(params['contains'])}
     end
     @posts = @posts.to_a
-    @posts.sort  {|a,b| a.helping_users.count <=> b.helping_users.count}
     @posts.sort {|a,b| a.created_at <=> b.created_at}
+    @posts.sort  {|a,b| a.helping_users.count <=> b.helping_users.count}
     @posts  = @posts.paginate(:page => (params[:page] || 1), :per_page =>3)
   end
 
