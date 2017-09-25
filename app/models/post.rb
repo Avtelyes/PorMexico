@@ -27,11 +27,11 @@ class Post < ApplicationRecord
     end
     reqs = reqs + post.content
     reqs = reqs + post.user.name
-    reqs
+    reqs.downcase
   end
 
   def includes_filter(text)
-    self.search_string.include? text
+    self.search_string.include? text.downcase
   end
 
 end
